@@ -187,7 +187,8 @@
                 <img src="http://bwg.nwu.edu.cn/uploadfile/2017/0921/20170921102120331.jpg">
               </div>
               <div class="hint">
-                关注官方微信在线预约
+                关注官方微信
+                  在线预约
               </div>
             </div>
           </div>

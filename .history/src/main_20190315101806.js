@@ -6,8 +6,8 @@ import './assets/styles/icon.css'
 import i18n from './lang'
 import './assets/styles/global.scss'
 import './assets/styles/transition.scss'
+import $ from 'jquery'
 import 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.css'
 
 Vue.config.productionTip = false
 

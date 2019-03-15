@@ -184,10 +184,17 @@
             </div>
             <div class="footerRight">
               <div class="imgcontainer">
-                <img src="http://bwg.nwu.edu.cn/uploadfile/2017/0921/20170921102120331.jpg">
+                <div class="row">
+                  <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img src="http://bwg.nwu.edu.cn/uploadfile/2017/0921/20170921102120331.jpg">
+                    </a>
+                  </div>
+                </div>
               </div>
               <div class="hint">
-                关注官方微信在线预约
+                关注官方微信
+                  在线预约
               </div>
             </div>
           </div>

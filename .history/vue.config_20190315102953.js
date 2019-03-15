@@ -4,10 +4,10 @@ module.exports = {
   configureWebpack: {
     plugins: [
       new webpack.ProvidePlugin({
-        $: 'jquery',
-        jQuery: 'jquery',
-        'window.jQuery': 'jquery',
-        Popper: ['popper.js', 'default']
+        // eslint-disable-next-line quotes
+        $: "jquery",
+        // eslint-disable-next-line quotes
+        jQuery: "jquery"
       })
     ]
   }

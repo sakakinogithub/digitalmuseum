@@ -1,66 +1,68 @@
 <template>
 <div class="screen">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    >
+  </head>
+  <body>
     <div class="wrap">
-      <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="container">
-            <div class="navbar-header">
-              <button
-                type="button"
-                class="navbar-toggle collapsed"
-                data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1"
-                aria-expanded="false"
-              >
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">logo</a>
-            </div>
+      <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li class="active">
-                  <a href="#">
-                    首页
-                    <span class="sr-only">(current)</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">博物馆</a>
-                </li>
-                <li>
-                  <a href="#">主题</a>
-                </li>
-                <li>
-                  <a href="#">文物</a>
-                </li>
-                <li>
-                  <a href="#">关于</a>
-                </li>
-              </ul>
-
-              <ul class="nav navbar-nav navbar-right">
-                <li>
-                  <a href="#">login</a>
-                </li>
-                <form class="navbar-form navbar-left">
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                  </div>
-                  <button type="submit" class="btn btn-default">Submit</button>
-                </form>
-              </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-          </div>
-          <!-- /.container-fluid -->
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
         </div>
-      </nav>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
       <div class="jumbotron">
         <div class="container">
           <h1>一月</h1>
@@ -75,7 +77,7 @@
       <div class="container">
         <div class="box">
           <div class="itemi1">
-            <img class="photo" src="https://img.dpm.org.cn/Uploads/Picture/2016/12/22/s585b38f00e48c.jpg">
+            <img src="https://img.dpm.org.cn/Uploads/Picture/2016/12/22/s585b38f00e48c.jpg">
           </div>
           <div class="itemi2">
             <div>
@@ -87,40 +89,41 @@
             </div>
           </div>
           <div class="item">
-            <img class="photo" src="https://img.dpm.org.cn/Uploads/Picture/2016/12/22/s585b38b930168.jpg">
+            <img src="https://img.dpm.org.cn/Uploads/Picture/2016/12/22/s585b38b930168.jpg">
           </div>
           <div class="item">
-            <img class="photo" src="https://img.dpm.org.cn/Uploads/Picture/2016/12/22/s585b3889f3e66.jpg">
+            <img src="https://img.dpm.org.cn/Uploads/Picture/2016/12/22/s585b3889f3e66.jpg">
           </div>
           <div class="itemfirst">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b3852595a2.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b3852595a2.jpg">
           </div>
           <div class="item">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b381e7251b.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b381e7251b.jpg">
           </div>
           <div class="item">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b37f03ce66.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b37f03ce66.jpg">
           </div>
           <div class="item">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b37bf60105.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b37bf60105.jpg">
           </div>
           <div class="itemfirst">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b377bbd0a0.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b377bbd0a0.jpg">
           </div>
           <div class="item">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b370b35c25.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b370b35c25.jpg">
           </div>
           <div class="item">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b36db6eec1.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b36db6eec1.jpg">
           </div>
           <div class="item">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b363502ae9.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b363502ae9.jpg">
           </div>
         </div>
       </div>
       <div class="page-header">
         <h1 class="theme">博物館</h1>
       </div>
+      <div class="bs-example" data-example-id="simple-carousel">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -129,16 +132,13 @@
           </ol>
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img class="museum" src="../../public/picture/China.png" alt="First slide">
-              <div class="carousel-caption"></div>
+              <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide">
             </div>
             <div class="item">
-              <img class="museum" src="../../public/picture/Clock.png" alt="Second slide">
-              <div class="carousel-caption"></div>
+              <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide">
             </div>
             <div class="item">
-              <img class="museum" src="../../public/picture/Treasure.png" alt="Third slide">
-              <div class="carousel-caption"></div>
+              <img data-src="holder.js/900x500/auto/#555:#333/text:Third slide" alt="Third slide">
             </div>
           </div>
           <a
@@ -160,6 +160,7 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+      </div>
       <footer>
         <div class="pcfooter">
           <div class="footerimg">
@@ -187,13 +188,15 @@
                 <img src="http://bwg.nwu.edu.cn/uploadfile/2017/0921/20170921102120331.jpg">
               </div>
               <div class="hint">
-                关注官方微信在线预约
+                关注官方微信
+                  在线预约
               </div>
             </div>
           </div>
         </div>
       </footer>
     </div>
+  </body>
 </div>
 </template>
 
@@ -211,7 +214,7 @@ export default {}
   height: 100%;
   overflow: scroll;
 }
-.photo {
+.img {
   border: 0;
   outline: 0;
   vertical-align: middle;
@@ -231,9 +234,7 @@ export default {}
   overflow: hidden;
   margin-top: 30px;
 }
-.museum {
-  width: 1280em;
-}
+
 .itemi1 {
   width: 624px;
   height: 452px;

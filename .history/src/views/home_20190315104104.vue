@@ -1,5 +1,14 @@
 <template>
 <div class="screen">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    >
+  </head>
+  <body>
     <div class="wrap">
       <nav class="navbar navbar-inverse">
         <div class="container-fluid">
@@ -75,7 +84,7 @@
       <div class="container">
         <div class="box">
           <div class="itemi1">
-            <img class="photo" src="https://img.dpm.org.cn/Uploads/Picture/2016/12/22/s585b38f00e48c.jpg">
+            <img src="https://img.dpm.org.cn/Uploads/Picture/2016/12/22/s585b38f00e48c.jpg">
           </div>
           <div class="itemi2">
             <div>
@@ -87,113 +96,65 @@
             </div>
           </div>
           <div class="item">
-            <img class="photo" src="https://img.dpm.org.cn/Uploads/Picture/2016/12/22/s585b38b930168.jpg">
+            <img src="https://img.dpm.org.cn/Uploads/Picture/2016/12/22/s585b38b930168.jpg">
           </div>
           <div class="item">
-            <img class="photo" src="https://img.dpm.org.cn/Uploads/Picture/2016/12/22/s585b3889f3e66.jpg">
+            <img src="https://img.dpm.org.cn/Uploads/Picture/2016/12/22/s585b3889f3e66.jpg">
           </div>
           <div class="itemfirst">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b3852595a2.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b3852595a2.jpg">
           </div>
           <div class="item">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b381e7251b.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b381e7251b.jpg">
           </div>
           <div class="item">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b37f03ce66.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b37f03ce66.jpg">
           </div>
           <div class="item">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b37bf60105.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b37bf60105.jpg">
           </div>
           <div class="itemfirst">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b377bbd0a0.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b377bbd0a0.jpg">
           </div>
           <div class="item">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b370b35c25.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b370b35c25.jpg">
           </div>
           <div class="item">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b36db6eec1.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b36db6eec1.jpg">
           </div>
           <div class="item">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b363502ae9.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b363502ae9.jpg">
           </div>
         </div>
       </div>
       <div class="page-header">
         <h1 class="theme">博物館</h1>
       </div>
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <img class="museum" src="../../public/picture/China.png" alt="First slide">
-              <div class="carousel-caption"></div>
-            </div>
-            <div class="item">
-              <img class="museum" src="../../public/picture/Clock.png" alt="Second slide">
-              <div class="carousel-caption"></div>
-            </div>
-            <div class="item">
-              <img class="museum" src="../../public/picture/Treasure.png" alt="Third slide">
-              <div class="carousel-caption"></div>
-            </div>
+      <div id="myCarousel" class="carousel slide">
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="/wp-content/uploads/2014/07/slide1.png" alt="First slide">
           </div>
-          <a
-            class="left carousel-control"
-            href="#carousel-example-generic"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="right carousel-control"
-            href="#carousel-example-generic"
-            role="button"
-            data-slide="next"
-          >
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      <footer>
-        <div class="pcfooter">
-          <div class="footerimg">
-            <div class="footerLeft">
-              <ol class="breadcrumb">
-                <li>
-                  <a href="#">网站地图</a>
-                </li>
-                <li>
-                  <a href="#">相关链接</a>
-                </li>
-                <li>
-                  <a href="#">版权声明</a>
-                </li>
-                <li>
-                  <a href="#">常见问题</a>
-                </li>
-                <li>
-                  <a href="#">联系我们</a>
-                </li>
-              </ol>
-            </div>
-            <div class="footerRight">
-              <div class="imgcontainer">
-                <img src="http://bwg.nwu.edu.cn/uploadfile/2017/0921/20170921102120331.jpg">
-              </div>
-              <div class="hint">
-                关注官方微信在线预约
-              </div>
-            </div>
+          <div class="item">
+            <img src="/wp-content/uploads/2014/07/slide2.png" alt="Second slide">
+          </div>
+          <div class="item">
+            <img src="/wp-content/uploads/2014/07/slide3.png" alt="Third slide">
           </div>
         </div>
-      </footer>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+      </div>
     </div>
+  </body>
 </div>
 </template>
 
@@ -211,7 +172,7 @@ export default {}
   height: 100%;
   overflow: scroll;
 }
-.photo {
+img {
   border: 0;
   outline: 0;
   vertical-align: middle;
@@ -230,9 +191,6 @@ export default {}
   position: relative;
   overflow: hidden;
   margin-top: 30px;
-}
-.museum {
-  width: 1280em;
 }
 .itemi1 {
   width: 624px;
@@ -281,39 +239,5 @@ export default {}
   margin-bottom: 10px;
   margin-left: 10px;
   overflow: hidden;
-}
-.footerimg {
-  background-color: black;
-  min-height: 118px;
-  height: 2.16rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-.footerLeft {
-  height: 1.7rem;
-  border-right: 1px solid #8791A5;
-  padding-right: 1.51rem;
-  line-height: 1.7rem;
-}
-.breadcrumb {
-  background-color: black;
-}
-.footerRight {
-  height: 1.7rem;
-  padding-left: 1.37rem;
-  color: #B5C0D4;
-  font-size: 0.257rem;
-}
-.imgcontainer{
-  margin-bottom: 0.396rem;
-  margin: 0px;
-  padding: 0px;
-  border-width: 0px;
-  border-style: initial;
-  border-color: initial;
-  border-image: initial;
 }
 </style>

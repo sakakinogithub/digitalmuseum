@@ -121,6 +121,7 @@
       <div class="page-header">
         <h1 class="theme">博物館</h1>
       </div>
+      <div class="bs-example" data-example-id="simple-carousel">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -129,16 +130,13 @@
           </ol>
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img class="museum" src="../../public/picture/China.png" alt="First slide">
-              <div class="carousel-caption"></div>
+              <img class="museum" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDkwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzkwMHg1MDAvYXV0by8jNzc3OiM1NTUvdGV4dDpGaXJzdCBzbGlkZQpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE2OTgwODRiYzI3IHRleHQgeyBmaWxsOiM1NTU7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6NDVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTY5ODA4NGJjMjciPjxyZWN0IHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjNzc3Ii8+PGc+PHRleHQgeD0iMzA4LjI5Njg3NSIgeT0iMjcwLjE1NjI1Ij5GaXJzdCBzbGlkZTwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" alt="First slide">
             </div>
             <div class="item">
-              <img class="museum" src="../../public/picture/Clock.png" alt="Second slide">
-              <div class="carousel-caption"></div>
+              <img class="museum" src="..." alt="Second slide">
             </div>
             <div class="item">
-              <img class="museum" src="../../public/picture/Treasure.png" alt="Third slide">
-              <div class="carousel-caption"></div>
+              <img class="museum" src="..." alt="Third slide">
             </div>
           </div>
           <a
@@ -160,6 +158,7 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+      </div>
       <footer>
         <div class="pcfooter">
           <div class="footerimg">
@@ -187,7 +186,8 @@
                 <img src="http://bwg.nwu.edu.cn/uploadfile/2017/0921/20170921102120331.jpg">
               </div>
               <div class="hint">
-                关注官方微信在线预约
+                关注官方微信
+                  在线预约
               </div>
             </div>
           </div>
@@ -231,9 +231,7 @@ export default {}
   overflow: hidden;
   margin-top: 30px;
 }
-.museum {
-  width: 1280em;
-}
+
 .itemi1 {
   width: 624px;
   height: 452px;

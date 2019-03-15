@@ -1,5 +1,14 @@
 <template>
 <div class="screen">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    >
+  </head>
+  <body>
     <div class="wrap">
       <nav class="navbar navbar-inverse">
         <div class="container-fluid">
@@ -75,7 +84,7 @@
       <div class="container">
         <div class="box">
           <div class="itemi1">
-            <img class="photo" src="https://img.dpm.org.cn/Uploads/Picture/2016/12/22/s585b38f00e48c.jpg">
+            <img src="https://img.dpm.org.cn/Uploads/Picture/2016/12/22/s585b38f00e48c.jpg">
           </div>
           <div class="itemi2">
             <div>
@@ -87,40 +96,41 @@
             </div>
           </div>
           <div class="item">
-            <img class="photo" src="https://img.dpm.org.cn/Uploads/Picture/2016/12/22/s585b38b930168.jpg">
+            <img src="https://img.dpm.org.cn/Uploads/Picture/2016/12/22/s585b38b930168.jpg">
           </div>
           <div class="item">
-            <img class="photo" src="https://img.dpm.org.cn/Uploads/Picture/2016/12/22/s585b3889f3e66.jpg">
+            <img src="https://img.dpm.org.cn/Uploads/Picture/2016/12/22/s585b3889f3e66.jpg">
           </div>
           <div class="itemfirst">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b3852595a2.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b3852595a2.jpg">
           </div>
           <div class="item">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b381e7251b.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b381e7251b.jpg">
           </div>
           <div class="item">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b37f03ce66.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b37f03ce66.jpg">
           </div>
           <div class="item">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b37bf60105.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b37bf60105.jpg">
           </div>
           <div class="itemfirst">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b377bbd0a0.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b377bbd0a0.jpg">
           </div>
           <div class="item">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b370b35c25.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b370b35c25.jpg">
           </div>
           <div class="item">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b36db6eec1.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b36db6eec1.jpg">
           </div>
           <div class="item">
-            <img class="photo" src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b363502ae9.jpg">
+            <img src="https://www.dpm.org.cn/Uploads/Picture/2016/12/22/s585b363502ae9.jpg">
           </div>
         </div>
       </div>
       <div class="page-header">
         <h1 class="theme">博物館</h1>
       </div>
+      <div class="bs-example" data-example-id="simple-carousel">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -129,16 +139,13 @@
           </ol>
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img class="museum" src="../../public/picture/China.png" alt="First slide">
-              <div class="carousel-caption"></div>
+              <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide">
             </div>
             <div class="item">
-              <img class="museum" src="../../public/picture/Clock.png" alt="Second slide">
-              <div class="carousel-caption"></div>
+              <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide">
             </div>
             <div class="item">
-              <img class="museum" src="../../public/picture/Treasure.png" alt="Third slide">
-              <div class="carousel-caption"></div>
+              <img data-src="holder.js/900x500/auto/#555:#333/text:Third slide" alt="Third slide">
             </div>
           </div>
           <a
@@ -160,6 +167,7 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+      </div>
       <footer>
         <div class="pcfooter">
           <div class="footerimg">
@@ -187,13 +195,15 @@
                 <img src="http://bwg.nwu.edu.cn/uploadfile/2017/0921/20170921102120331.jpg">
               </div>
               <div class="hint">
-                关注官方微信在线预约
+                关注官方微信
+                  在线预约
               </div>
             </div>
           </div>
         </div>
       </footer>
     </div>
+  </body>
 </div>
 </template>
 
@@ -211,7 +221,7 @@ export default {}
   height: 100%;
   overflow: scroll;
 }
-.photo {
+.img {
   border: 0;
   outline: 0;
   vertical-align: middle;
@@ -231,9 +241,7 @@ export default {}
   overflow: hidden;
   margin-top: 30px;
 }
-.museum {
-  width: 1280em;
-}
+
 .itemi1 {
   width: 624px;
   height: 452px;
