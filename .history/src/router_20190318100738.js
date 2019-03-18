@@ -23,7 +23,7 @@ export default new Router({
     {
       path: '/home',
       component: () => import('./views/home.vue')
-    },
+    }
     {
       path: '/3d',
       component: () => import('./views/3d.vue')
