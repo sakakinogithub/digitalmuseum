@@ -22,7 +22,7 @@
       </div>
     </div>
   </div>
-  <hot-search-list v-show="hotSearchVisible" ref="hotSearch"></hot-search-list>
+  <hot-search-list v-show="hotSearchVisible"></hot-search-list>
 </div>
 </template>
 
@@ -60,7 +60,7 @@ export default {
   },
   methods: {
     back () {
-      if (this.offsetY > 0) {
+      if (this.offsetY > 0){
         this.showShadow()
       } else {
         this.hideShadow()
@@ -71,9 +71,6 @@ export default {
       this.hideTitle()
       this.hideShadow()
       this.hotSearchVisible = true
-      this.$nextTick(() => {
-        this.$refs.hotSearch.reset()
-      })
     },
     hideHotSearch () {
       this.hotSearchVisible = false

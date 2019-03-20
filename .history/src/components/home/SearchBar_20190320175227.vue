@@ -22,7 +22,7 @@
       </div>
     </div>
   </div>
-  <hot-search-list v-show="hotSearchVisible" ref="hotSearch"></hot-search-list>
+  <hot-search-list v-show="hotSearchVisible"></hot-search-list>
 </div>
 </template>
 
@@ -60,30 +60,16 @@ export default {
   },
   methods: {
     back () {
-      if (this.offsetY > 0) {
-        this.showShadow()
-      } else {
-        this.hideShadow()
-      }
       this.hideHotSearch()
+      this.showTitle()
     },
     showHotSearch () {
       this.hideTitle()
       this.hideShadow()
       this.hotSearchVisible = true
-      this.$nextTick(() => {
-        this.$refs.hotSearch.reset()
-      })
     },
     hideHotSearch () {
       this.hotSearchVisible = false
-      if (this.offsetY > 0) {
-        this.hideTitle()
-        this.showShadow()
-      } else {
-        this.showTitle()
-        this.hideShadow()
-      }
     },
     hideTitle () {
       this.titleVisible = false

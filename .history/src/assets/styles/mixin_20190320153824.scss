@@ -1,8 +1,9 @@
 $animationTime: .2s;
 $animationType: linear;
 $ratio: 375 / 10;
+
 @function px2rem($px) {
-  @return $px /$ratio + rem
+  @return $px / $ratio + rem;
 }
 
 @mixin center {
@@ -40,20 +41,10 @@ $ratio: 375 / 10;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: $line;
-  word-break: keep-all;
   white-space: normal;
   overflow: hidden;
   text-overflow: ellipsis;
-  overflow-wrap: break-word;
-}
-
-@mixin scroll {
-  overflow-x: hidden;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  word-break: keep-all;
 }
 
 .icon {

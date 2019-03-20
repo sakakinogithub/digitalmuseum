@@ -8,9 +8,6 @@ export const MuseumHomeMixin = {
     ])
   },
   methods: {
-    ...mapActions([
-      'setOffsetY',
-      'setHotSearchOffsetY'
-    ])
+    ...mapActions(['setOffsetY'])
   }
 }
