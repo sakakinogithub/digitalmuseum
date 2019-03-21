@@ -1,6 +1,6 @@
 const book = {
   offsetY: state => state.book.offsetY,
-  hotSearchOffsetY: state => state.store.hotSearchOffsetY,
+  hotSearchOffsetY: state => state.store.hotSearchOffsetY
   flapCardVisible: state => state.store.flapCardVisible
 }
 

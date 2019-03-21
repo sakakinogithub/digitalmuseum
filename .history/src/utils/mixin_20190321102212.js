@@ -11,8 +11,7 @@ export const MuseumHomeMixin = {
   methods: {
     ...mapActions([
       'setOffsetY',
-      'setHotSearchOffsetY',
-      'setFlapCardVisible'
+      'setHotSearchOffsetY'
     ])
   }
 }
