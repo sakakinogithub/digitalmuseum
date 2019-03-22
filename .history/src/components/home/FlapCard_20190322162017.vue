@@ -138,7 +138,7 @@ export default {
         this.flapCardRotate()
       }, this.intervalTime)
       setTimeout(() => {
-        this.stopAnimation()
+        this.runFlapCardAnimation = false
       }, 2500)
     },
     startPointAnimation () {
@@ -148,7 +148,6 @@ export default {
       }, 750)
     },
     stopAnimation () {
-      this.runFlapCardAnimation = false
       if (this.task) {
         clearInterval(this.task)
       }

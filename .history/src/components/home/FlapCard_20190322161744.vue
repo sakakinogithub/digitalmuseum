@@ -138,7 +138,7 @@ export default {
         this.flapCardRotate()
       }, this.intervalTime)
       setTimeout(() => {
-        this.stopAnimation()
+        this.runFlapCardAnimation = false
       }, 2500)
     },
     startPointAnimation () {
@@ -148,7 +148,6 @@ export default {
       }, 750)
     },
     stopAnimation () {
-      this.runFlapCardAnimation = false
       if (this.task) {
         clearInterval(this.task)
       }
@@ -191,7 +190,7 @@ export default {
       transform: scale(0);
       opacity: 0;
       &.animation {
-        animation: flap-card-move .3s ease-in both;
+        animation: flap-card-move .3s ease-in;
       }
       @keyframes flap-card-move {
         0% {
