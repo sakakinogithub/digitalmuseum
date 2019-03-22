@@ -20,11 +20,11 @@
 </template>
 
 <script>
-import { MuseumHomeMixin } from '../../utils/mixin'
+import { storeHomeMixin } from '../../utils/mixin'
 import { flapCardList } from '../../utils/store'
 
 export default {
-  mixins: [MuseumHomeMixin],
+  mixins: [storeHomeMixin],
   data () {
     return {
       flapCardList,

@@ -20,24 +20,24 @@
 </template>
 
 <script>
-import { MuseumHomeMixin } from '../../utils/mixin'
-import { flapCardList } from '../../utils/store'
+  import { storeHomeMixin } from '../../utils/mixin'
+  import { flapCardList } from '../../utils/store'
 
-export default {
-  mixins: [MuseumHomeMixin],
-  data () {
-    return {
-      flapCardList,
-      front: 0,
-      back: 1,
-      intervalTime: 25,
-      runFlapCardAnimation: false,
-      pointList: null,
+  export default {
+    mixins: [storeHomeMixin],
+    data() {
+      return {
+        flapCardList,
+        front: 0,
+        back: 1,
+        intervalTime: 25,
+        runFlapCardAnimation: false,
+        pointList: null,
       runPointAnimation: false
     }
   },
   watch: {
-    flapCardVisible (v) {
+    flapCardVisible(v) {
       if (v) {
         this.runAnimation()
       }
@@ -48,14 +48,14 @@ export default {
       this.stopAnimation()
       this.setFlapCardVisible(false)
     },
-    semiCircleStyle (item, dir) {
+    semiCircleStyle(item, dir) {
       return {
         backgroundColor: `rgb(${item.r}, ${item.g}, ${item.b})`,
         backgroundSize: item.backgroundSize,
         backgroundImage: dir === 'left' ? item.imgLeft : item.imgRight
       }
     },
-    rotate (index, type) {
+    rotate(index, type) {
       const item = this.flapCardList[index]
       let dom
       if (type === 'front') {
@@ -66,7 +66,7 @@ export default {
       dom.style.transform = `rotateY(${item.rotateDegree}deg)`
       dom.style.backgroundColor = `rgb(${item.r}, ${item._g}, ${item.b})`
     },
-    flapCardRotate () {
+    flapCardRotate() {
       const frontFlapCard = this.flapCardList[this.front]
       const backFlapCard = this.flapCardList[this.back]
       frontFlapCard.rotateDegree += 10
@@ -84,7 +84,7 @@ export default {
         this.next()
       }
     },
-    next () {
+    next() {
       const frontFlapCard = this.flapCardList[this.front]
       const backFlapCard = this.flapCardList[this.back]
       frontFlapCard.rotateDegree = 0
@@ -102,26 +102,26 @@ export default {
       if (this.back >= len) {
         this.back = 0
       }
-      // 动态设置zIndex
-      // 100 -> 96
-      // 99 -> 100
-      // 98 -> 99
-      // 97 -> 98
-      // 96 -> 97
-      // (0 - 1 + 5) % 5 = 4
-      // (1 - 1 + 5) % 5 = 0
+        // 动态设置zIndex
+        // 100 -> 96
+        // 99 -> 100
+        // 98 -> 99
+        // 97 -> 98
+        // 96 -> 97
+        // (0 - 1 + 5) % 5 = 4
+        // (1 - 1 + 5) % 5 = 0
       this.flapCardList.forEach((item, index) => {
         item.zIndex = 100 - ((index - this.front + len) % len)
       })
       this.prepare()
     },
-    prepare () {
+    prepare() {
       const backFlapCard = this.flapCardList[this.back]
       backFlapCard.rotateDegree = 180
       backFlapCard._g = backFlapCard.g - 5 * 9
       this.rotate(this.back, 'back')
     },
-    reset () {
+    reset() {
       this.front = 0
       this.back = 1
       this.flapCardList.forEach((item, index) => {
@@ -132,25 +132,25 @@ export default {
         this.rotate(index, 'back')
       })
     },
-    startFlapCardAnimation () {
+    startFlapCardAnimation() {
       this.prepare()
       this.task = setInterval(() => {
         this.flapCardRotate()
       }, this.intervalTime)
     },
-    startPointAnimation () {
+    startPointAnimation() {
       this.runPointAnimation = true
       setTimeout(() => {
         this.runPointAnimation = false
       }, 750)
     },
-    stopAnimation () {
+    stopAnimation() {
       if (this.task) {
         clearInterval(this.task)
       }
       this.reset()
     },
-    runAnimation () {
+    runAnimation() {
       this.runFlapCardAnimation = true
       setTimeout(() => {
         this.startFlapCardAnimation()
