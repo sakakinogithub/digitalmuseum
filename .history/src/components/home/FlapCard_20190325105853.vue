@@ -33,15 +33,15 @@
 </template>
 
 <script>
-import { MuseumHomeMixin } from '../../utils/mixin'
+import { storeHomeMixin } from '../../utils/mixin'
 import { flapCardList, categoryText } from '../../utils/store'
 
 export default {
-  mixins: [MuseumHomeMixin],
+  mixins: [storeHomeMixin],
   props: {
     data: Object
   },
-  data () {
+  data() {
     return {
       flapCardList,
       front: 0,
@@ -54,18 +54,18 @@ export default {
     }
   },
   watch: {
-    flapCardVisible (v) {
+    flapCardVisible(v) {
       if (v) {
         this.runAnimation()
       }
     }
   },
   methods: {
-    close () {
+    close() {
       this.stopAnimation()
       this.setFlapCardVisible(false)
     },
-    semiCircleStyle (item, dir) {
+    semiCircleStyle(item, dir) {
       return {
         backgroundColor: `rgb(${item.r}, ${item.g}, ${item.b})`,
         backgroundSize: item.backgroundSize,

@@ -55,7 +55,8 @@ export const flapCardList = [
     rotateDegree: 0
   }
 ]
-export function getCategoryName (id) {
+
+export function getCategoryName(id) {
   switch (id) {
     case 1:
       return 'ComputerScience'
@@ -104,7 +105,7 @@ export function getCategoryName (id) {
   }
 }
 
-export function categoryText (category, vue) {
+export function categoryText(category, vue) {
   switch (category) {
     case 1:
       return vue.$t('category.computerScience')

@@ -33,11 +33,11 @@
 </template>
 
 <script>
-import { MuseumHomeMixin } from '../../utils/mixin'
+import { storeHomeMixin } from '../../utils/mixin'
 import { flapCardList, categoryText } from '../../utils/store'
 
 export default {
-  mixins: [MuseumHomeMixin],
+  mixins: [storeHomeMixin],
   props: {
     data: Object
   },

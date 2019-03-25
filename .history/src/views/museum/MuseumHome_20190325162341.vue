@@ -12,7 +12,6 @@
       <div class="category-list-wrapper" v-for="(item, index) in categoryList" :key="index">
         <category-book :data="item"></category-book>
       </div>
-      <category class="categories" :data="categories"></category>
     </scroll>
   </div>
 </template>
@@ -26,8 +25,6 @@ import { home } from '../../api/store'
 import GuessYouLike from '../../components/home/GuessYouLike'
 import Recommend from '../../components/home/Recommend'
 import Featured from '../../components/home/Featured'
-import CategoryBook from '../../components/home/CategoryBook'
-import Category from '../../components/home/Category'
 export default {
   mixins: [MuseumHomeMixin],
   components: {
@@ -36,9 +33,7 @@ export default {
     FlapCard,
     GuessYouLike,
     Recommend,
-    Featured,
-    Category,
-    CategoryBook
+    Featured
   },
   data () {
     return {
@@ -48,8 +43,7 @@ export default {
       guessYouLike: null,
       recommend: null,
       featured: null,
-      categoryList: null,
-      categories: null
+      categoryList: null
     }
   },
   methods: {
@@ -75,7 +69,6 @@ export default {
         this.recommend = data.recommend
         this.featured = data.featured
         this.categoryList = data.categoryList
-        this.categories = data.categories
       }
     })
   }
@@ -102,12 +95,6 @@ export default {
       margin-top: px2rem(20);
     }
     .featured {
-      margin-top: px2rem(20);
-    }
-    .category-list-wrapper {
-      margin-top: px2rem(20);
-    }
-    .categories {
       margin-top: px2rem(20);
     }
   }

@@ -55,6 +55,7 @@ export const flapCardList = [
     rotateDegree: 0
   }
 ]
+
 export function getCategoryName (id) {
   switch (id) {
     case 1:

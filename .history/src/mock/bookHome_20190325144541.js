@@ -160,7 +160,7 @@ module.exports = {
         'result': '《Living with Disfigurement》',
         'percent': '97%'
       }],
-  'banner': 'http://bwg.nwu.edu.cn/uploadfile/2017/0926/20170926060540193.jpg',
+  'banner': 'http://img.cbi360.net/2017/7/21/00079a40-5bea-4348-b244-bab180dc97a2.jpg',
   'recommend':
     [
       {

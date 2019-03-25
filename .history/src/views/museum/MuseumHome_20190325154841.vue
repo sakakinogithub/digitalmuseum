@@ -7,12 +7,7 @@
         <div class="banner-img" :style="{backgroundImage:`url('${banner}')`}"></div>
       </div>
       <guess-you-like :data="guessYouLike"></guess-you-like>
-      <recommend :data="recommend" class="recommend"></recommend>
-      <featured :data="featured" :titleText="$t('home.featured')" :btnText="$t('home.seeAll')" class="featured"></featured>
-      <div class="category-list-wrapper" v-for="(item, index) in categoryList" :key="index">
-        <category-book :data="item"></category-book>
-      </div>
-      <category class="categories" :data="categories"></category>
+      <recommend :data="recommend"></recommend>
     </scroll>
   </div>
 </template>
@@ -25,9 +20,6 @@ import { MuseumHomeMixin } from '../../utils/mixin'
 import { home } from '../../api/store'
 import GuessYouLike from '../../components/home/GuessYouLike'
 import Recommend from '../../components/home/Recommend'
-import Featured from '../../components/home/Featured'
-import CategoryBook from '../../components/home/CategoryBook'
-import Category from '../../components/home/Category'
 export default {
   mixins: [MuseumHomeMixin],
   components: {
@@ -35,10 +27,7 @@ export default {
     Scroll,
     FlapCard,
     GuessYouLike,
-    Recommend,
-    Featured,
-    Category,
-    CategoryBook
+    Recommend
   },
   data () {
     return {
@@ -46,10 +35,7 @@ export default {
       random: null,
       banner: null,
       guessYouLike: null,
-      recommend: null,
-      featured: null,
-      categoryList: null,
-      categories: null
+      recommend；null
     }
   },
   methods: {
@@ -72,10 +58,6 @@ export default {
         this.random = data.random[randomIndex]
         this.banner = data.banner
         this.guessYouLike = data.guessYouLike
-        this.recommend = data.recommend
-        this.featured = data.featured
-        this.categoryList = data.categoryList
-        this.categories = data.categories
       }
     })
   }
@@ -97,18 +79,6 @@ export default {
         background-repeat: no-repeat;
         background-size: 100% 100%;
       }
-    }
-    .recommend{
-      margin-top: px2rem(20);
-    }
-    .featured {
-      margin-top: px2rem(20);
-    }
-    .category-list-wrapper {
-      margin-top: px2rem(20);
-    }
-    .categories {
-      margin-top: px2rem(20);
     }
   }
 </style>

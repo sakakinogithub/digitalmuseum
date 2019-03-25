@@ -14,8 +14,6 @@ export const MuseumHomeMixin = {
       'setHotSearchOffsetY',
       'setFlapCardVisible'
     ]),
-    showBookDetail (book) {
-      console.log('showBookDetail')
-    }
+    showBookDetail (book) {}
   }
 }

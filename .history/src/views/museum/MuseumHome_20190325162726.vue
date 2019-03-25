@@ -12,7 +12,6 @@
       <div class="category-list-wrapper" v-for="(item, index) in categoryList" :key="index">
         <category-book :data="item"></category-book>
       </div>
-      <category class="categories" :data="categories"></category>
     </scroll>
   </div>
 </template>
@@ -38,7 +37,7 @@ export default {
     Recommend,
     Featured,
     Category,
-    CategoryBook
+    CategoryBook,
   },
   data () {
     return {

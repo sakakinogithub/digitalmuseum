@@ -9,10 +9,6 @@
       <guess-you-like :data="guessYouLike"></guess-you-like>
       <recommend :data="recommend" class="recommend"></recommend>
       <featured :data="featured" :titleText="$t('home.featured')" :btnText="$t('home.seeAll')" class="featured"></featured>
-      <div class="category-list-wrapper" v-for="(item, index) in categoryList" :key="index">
-        <category-book :data="item"></category-book>
-      </div>
-      <category class="categories" :data="categories"></category>
     </scroll>
   </div>
 </template>
@@ -26,8 +22,6 @@ import { home } from '../../api/store'
 import GuessYouLike from '../../components/home/GuessYouLike'
 import Recommend from '../../components/home/Recommend'
 import Featured from '../../components/home/Featured'
-import CategoryBook from '../../components/home/CategoryBook'
-import Category from '../../components/home/Category'
 export default {
   mixins: [MuseumHomeMixin],
   components: {
@@ -35,10 +29,7 @@ export default {
     Scroll,
     FlapCard,
     GuessYouLike,
-    Recommend,
-    Featured,
-    Category,
-    CategoryBook
+    Recommend
   },
   data () {
     return {
@@ -47,9 +38,7 @@ export default {
       banner: null,
       guessYouLike: null,
       recommend: null,
-      featured: null,
-      categoryList: null,
-      categories: null
+      featured: null
     }
   },
   methods: {
@@ -74,8 +63,6 @@ export default {
         this.guessYouLike = data.guessYouLike
         this.recommend = data.recommend
         this.featured = data.featured
-        this.categoryList = data.categoryList
-        this.categories = data.categories
       }
     })
   }
@@ -102,12 +89,6 @@ export default {
       margin-top: px2rem(20);
     }
     .featured {
-      margin-top: px2rem(20);
-    }
-    .category-list-wrapper {
-      margin-top: px2rem(20);
-    }
-    .categories {
       margin-top: px2rem(20);
     }
   }
