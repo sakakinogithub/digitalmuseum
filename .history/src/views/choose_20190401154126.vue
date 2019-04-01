@@ -310,7 +310,6 @@ img {
 }
 .navbar {
   margin-bottom: 0;
-  border:none;
 }
 .mint-swipe {
   height: 10rem;

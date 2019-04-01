@@ -308,12 +308,8 @@ img {
 .page {
   margin: 0;
 }
-.navbar {
-  margin-bottom: 0;
-  border:none;
-}
 .mint-swipe {
-  height: 10rem;
+  height:10rem;
   .mint-swipe-item {
     &:nth-child(1) {
       background-color: red;

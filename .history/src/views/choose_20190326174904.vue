@@ -49,9 +49,7 @@
 
               <ul class="nav navbar-nav navbar-right">
                 <li>
-                  <a href="#">
-                    <span class="glyphicon glyphicon-user"></span>
-                  </a>
+                  <a href="#"><span class="glyphicon glyphicon-user"></span></a>
                 </li>
                 <form class="navbar-form navbar-left">
                   <div class="form-group">
@@ -65,11 +63,12 @@
           <!-- /.container-fluid -->
         </div>
       </nav>
-      <mt-swipe :auto="4000">
-        <mt-swipe-item>1</mt-swipe-item>
-        <mt-swipe-item>2</mt-swipe-item>
-        <mt-swipe-item>3</mt-swipe-item>
-      </mt-swipe>
+      <ol class="breadcrumb">
+        <li>
+          <a href="#">首页</a>
+        </li>
+        <li class="active">导航</li>
+      </ol>
       <div class="page-header">
         <h1 class="theme">场馆</h1>
       </div>
@@ -133,7 +132,7 @@
                 <div class="name">辽宁省博物馆</div>
                 <div class="time">2019/01/18 - 2019/04/18</div>
               </div>
-              <hr class="simple" color="#6f5499">
+              <hr class="simple" color="#6f5499"/>
               <div class="col-2 text">
                 <span class="glyphicon glyphicon-align-left"></span>
                 <h6>匠心独运——钟表珍宝展</h6>
@@ -141,7 +140,7 @@
                 <div class="name">香港科学馆</div>
                 <div class="time">2018/12/07 - 2019/04/10</div>
               </div>
-              <hr class="simple" color="#6f5499">
+              <hr class="simple" color="#6f5499"/>
               <div class="col-2 text">
                 <span class="glyphicon glyphicon-align-left"></span>
                 <h6>东风西韵——紫禁城与海上丝绸之路展</h6>
@@ -149,7 +148,7 @@
                 <div class="name">葡萄牙阿茹达宫</div>
                 <div class="time">2018/12/04 - 2019/03/31</div>
               </div>
-              <hr class="simple" color="#6f5499">
+              <hr class="simple" color="#6f5499"/>
               <div class="col-2 text">
                 <span class="glyphicon glyphicon-align-left"></span>
                 <h6>紫禁风华——2018太原·故宫文物展</h6>
@@ -157,7 +156,7 @@
                 <div class="name">山西太原博物馆</div>
                 <div class="time"></div>
               </div>
-              <hr class="simple" color="#6f5499">
+              <hr class="simple" color="#6f5499"/>
               <div class="col-4 devide">
                 <nav aria-label="Page navigation">
                   <ul class="pagination">
@@ -215,12 +214,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  components: {}
-}
-</script>
-
 <style lang="scss" rel="stylesheet/scss" scoped>
 h6 {
   width: 80%;
@@ -265,19 +258,9 @@ img {
 }
 .jumbotron {
   color: #fff;
-  background: #0f2027; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #2c5364,
-    #203a43,
-    #0f2027
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #2c5364,
-    #203a43,
-    #0f2027
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .text {
   display: flex;
@@ -307,23 +290,5 @@ img {
 }
 .page {
   margin: 0;
-}
-.navbar {
-  margin-bottom: 0;
-  border:none;
-}
-.mint-swipe {
-  height: 10rem;
-  .mint-swipe-item {
-    &:nth-child(1) {
-      background-color: red;
-    }
-    &:nth-child(2) {
-      background-color: blue;
-    }
-    &:nth-child(3) {
-      background-color: cyan;
-    }
-  }
 }
 </style>

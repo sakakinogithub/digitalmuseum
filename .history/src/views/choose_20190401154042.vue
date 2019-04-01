@@ -308,10 +308,7 @@ img {
 .page {
   margin: 0;
 }
-.navbar {
-  margin-bottom: 0;
-  border:none;
-}
+.class="navbar navbar-inverse"
 .mint-swipe {
   height: 10rem;
   .mint-swipe-item {

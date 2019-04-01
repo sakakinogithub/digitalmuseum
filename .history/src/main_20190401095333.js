@@ -11,9 +11,7 @@ import './assets/styles/transition.scss'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import './mock'
-import './lib/mui/css/mui.min.css'
 
-Vue.use(MintUI)
 Vue.config.productionTip = false
 
 new Vue({

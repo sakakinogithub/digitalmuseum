@@ -7,7 +7,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/home'
+      redirect: '/museum'
     },
     {
       path: '/museum',
@@ -28,6 +28,10 @@ export default new Router({
         }
       ]
     },
+    {
+      path: '/123',
+      component: () => import('./views/home.vue')
+    }
     {
       path: '/home',
       component: () => import('./views/home.vue')
