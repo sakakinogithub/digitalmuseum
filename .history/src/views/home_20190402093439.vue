@@ -1,5 +1,5 @@
 <template>
-  <div class="screen">
+<div class="screen">
     <div class="wrap">
       <div class="jumbotron">
         <navbar></navbar>
@@ -16,10 +16,7 @@
       <div class="container">
         <div class="row">
           <div class="item1 col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <img
-              class="photo"
-              src="https://img.dpm.org.cn/Uploads/Picture/2016/12/22/s585b38f00e48c.jpg"
-            >
+            <img class="photo" src="https://img.dpm.org.cn/Uploads/Picture/2016/12/22/s585b38f00e48c.jpg">
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <div class="row">
@@ -73,31 +70,92 @@
       <div class="page-header">
         <h1 class="theme">博物館</h1>
       </div>
-      <carousel></carousel>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img class="museum" src="../../public/picture/China.png" alt="First slide">
+              <div class="carousel-caption"></div>
+            </div>
+            <div class="item">
+              <img class="museum" src="../../public/picture/Clock.png" alt="Second slide">
+              <div class="carousel-caption"></div>
+            </div>
+            <div class="item">
+              <img class="museum" src="../../public/picture/Treasure.png" alt="Third slide">
+              <div class="carousel-caption"></div>
+            </div>
+          </div>
+          <a
+            class="left carousel-control"
+            href="#carousel-example-generic"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="right carousel-control"
+            href="#carousel-example-generic"
+            role="button"
+            data-slide="next"
+          >
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       <footer>
-        <pcfooter></pcfooter>
+        <div class="pcfooter">
+          <div class="footerimg">
+            <div class="footerLeft">
+              <ol class="breadcrumb">
+                <li>
+                  <a href="#">使用帮助</a>
+                </li>
+                <li>
+                  <a href="#">相关链接</a>
+                </li>
+                <li>
+                  <a href="#">版权声明</a>
+                </li>
+                <li>
+                  <a href="#">常见问题</a>
+                </li>
+                <li>
+                  <a href="#">联系我们</a>
+                </li>
+              </ol>
+            </div>
+            <div class="footerRight">
+              <div class="imgcontainer">
+                <img src="http://bwg.nwu.edu.cn/uploadfile/2017/0921/20170921102120331.jpg">
+              </div>
+              <div class="hint">
+                关注官方微信在线预约
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
-  </div>
+</div>
 </template>
 
 <script>
 import navbar from '../components/common/navbar'
-import carousel from '../components/common/carousel'
-import pcfooter from '../components/common/pcfooter'
 export default {
   components: {
-    navbar,
-    carousel,
-    pcfooter
+    navbar
   }
 }
 </script>
 
 <style lang="scss" rel="stylesheet/scss" scoped>
-.jumbotron {
-  padding-top: 0;
-}
 .screen {
   width: 100%;
   height: 100%;
@@ -130,10 +188,10 @@ export default {
 .museum {
   width: 1280em;
 }
-.first-text {
+.first-text{
   padding: 0px 5px;
 }
-.item1 {
+.item1{
   height: 450px;
   padding: 0 5px;
   padding-bottom: 10px;
@@ -141,9 +199,9 @@ export default {
 .item2 {
   background: url(https://img.dpm.org.cn/Public/static/themes/image/lyc/temporary5-bg2.jpg)
     repeat;
-  width: 100%;
-  height: 200px;
-  margin: 0px;
+  width: 100%;;
+  height:200px;
+  margin:0px;
   margin-bottom: 10px;
   overflow: hidden;
   float: left;
@@ -156,7 +214,7 @@ export default {
   padding-top: 10px;
   padding-bottom: 18px;
 }
-.item3 {
+.item3{
   height: 230px;
   overflow: hidden;
   margin: 0px;
@@ -166,11 +224,11 @@ export default {
   justify-content: center;
   align-items: center;
 }
-.item3 img {
+.item3 img{
   width: 100%;
-  height: 100%;
+  height:100%;
 }
-.item-other {
+.item-other{
   padding: 0px 5px;
   height: 100%;
   float: left;
@@ -180,9 +238,9 @@ export default {
   align-items: center;
   justify-content: center;
 }
-.item-other img {
-  width: 100%;
-  height: auto;
+.item-other img{
+  width:100%;
+  height:auto;
 }
 .item {
   position: relative;
@@ -204,21 +262,21 @@ export default {
   background-size: 100% 100%;
 }
 .footerLeft {
-  border-right: 1px solid #8791a5;
-  .breadcrumb {
-    padding: 0;
-    margin: 0;
-  }
+  height: 1.7rem;
+  border-right: 1px solid #8791A5;
+  padding-right: 1.51rem;
+  line-height: 1.7rem;
 }
 .breadcrumb {
   background-color: black;
 }
 .footerRight {
+  height: 1.7rem;
   padding-left: 1.37rem;
-  color: #b5c0d4;
+  color: #B5C0D4;
   font-size: 0.257rem;
 }
-.imgcontainer {
+.imgcontainer{
   margin-bottom: 0.396rem;
   margin: 0px;
   padding: 0px;
@@ -227,8 +285,5 @@ export default {
   border-color: initial;
   border-image: initial;
 }
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
-}
+
 </style>

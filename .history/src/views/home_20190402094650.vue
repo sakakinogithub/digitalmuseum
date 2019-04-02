@@ -73,9 +73,68 @@
       <div class="page-header">
         <h1 class="theme">博物館</h1>
       </div>
-      <carousel></carousel>
+      <div id="myCarousel" class="carousel slide">
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="/wp-content/uploads/2014/07/slide1.png" alt="First slide">
+          </div>
+          <div class="item">
+            <img src="/wp-content/uploads/2014/07/slide2.png" alt="Second slide">
+          </div>
+          <div class="item">
+            <img src="/wp-content/uploads/2014/07/slide3.png" alt="Third slide">
+          </div>
+        </div>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
       <footer>
-        <pcfooter></pcfooter>
+        <div class="pcfooter">
+          <div class="footerimg">
+            <div class="footerLeft">
+              <ol class="breadcrumb">
+                <li>
+                  <a href="#">使用帮助</a>
+                </li>
+                <li>
+                  <a href="#">相关链接</a>
+                </li>
+                <li>
+                  <a href="#">版权声明</a>
+                </li>
+                <li>
+                  <a href="#">常见问题</a>
+                </li>
+                <li>
+                  <a href="#">联系我们</a>
+                </li>
+              </ol>
+            </div>
+            <div class="footerRight">
+              <div class="imgcontainer">
+                <img
+                  src="http://bwg.nwu.edu.cn/uploadfile/2017/0921/20170921102120331.jpg"
+                  class="img-responsive"
+                >
+              </div>
+              <div class="hint">关注官方微信在线预约</div>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   </div>
@@ -83,21 +142,14 @@
 
 <script>
 import navbar from '../components/common/navbar'
-import carousel from '../components/common/carousel'
-import pcfooter from '../components/common/pcfooter'
 export default {
   components: {
-    navbar,
-    carousel,
-    pcfooter
+    navbar
   }
 }
 </script>
 
 <style lang="scss" rel="stylesheet/scss" scoped>
-.jumbotron {
-  padding-top: 0;
-}
 .screen {
   width: 100%;
   height: 100%;
@@ -204,16 +256,16 @@ export default {
   background-size: 100% 100%;
 }
 .footerLeft {
+  height: 1.7rem;
   border-right: 1px solid #8791a5;
-  .breadcrumb {
-    padding: 0;
-    margin: 0;
-  }
+  padding-right: 1.51rem;
+  line-height: 1.7rem;
 }
 .breadcrumb {
   background-color: black;
 }
 .footerRight {
+  height: 1.7rem;
   padding-left: 1.37rem;
   color: #b5c0d4;
   font-size: 0.257rem;
@@ -226,9 +278,5 @@ export default {
   border-style: initial;
   border-color: initial;
   border-image: initial;
-}
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
 }
 </style>

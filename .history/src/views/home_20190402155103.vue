@@ -73,7 +73,7 @@
       <div class="page-header">
         <h1 class="theme">博物館</h1>
       </div>
-      <carousel></carousel>
+      
       <footer>
         <pcfooter></pcfooter>
       </footer>
@@ -83,12 +83,10 @@
 
 <script>
 import navbar from '../components/common/navbar'
-import carousel from '../components/common/carousel'
 import pcfooter from '../components/common/pcfooter'
 export default {
   components: {
     navbar,
-    carousel,
     pcfooter
   }
 }

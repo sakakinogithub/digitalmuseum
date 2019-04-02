@@ -73,7 +73,34 @@
       <div class="page-header">
         <h1 class="theme">博物館</h1>
       </div>
-      <carousel></carousel>
+     <div class="bs-example" data-example-id="simple-carousel">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide">
+        </div>
+        <div class="item">
+          <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide">
+        </div>
+        <div class="item">
+          <img data-src="holder.js/900x500/auto/#555:#333/text:Third slide" alt="Third slide">
+        </div>
+      </div>
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
       <footer>
         <pcfooter></pcfooter>
       </footer>
@@ -83,21 +110,16 @@
 
 <script>
 import navbar from '../components/common/navbar'
-import carousel from '../components/common/carousel'
 import pcfooter from '../components/common/pcfooter'
 export default {
   components: {
     navbar,
-    carousel,
     pcfooter
   }
 }
 </script>
 
 <style lang="scss" rel="stylesheet/scss" scoped>
-.jumbotron {
-  padding-top: 0;
-}
 .screen {
   width: 100%;
   height: 100%;
@@ -226,9 +248,5 @@ export default {
   border-style: initial;
   border-color: initial;
   border-image: initial;
-}
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
 }
 </style>
