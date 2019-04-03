@@ -47,10 +47,6 @@ export default new Router({
     {
       path: '/reliclist',
       component: () => import('./views/RelicList.vue')
-    },
-    {
-      path: '/relicinfo',
-      component: () => import('./views/relic/relicinfo.vue')
     }
   ]
 })

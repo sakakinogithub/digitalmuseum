@@ -61,7 +61,6 @@
 <style lang="scss" rel="stylesheet/scss" scoped>
 .navbar{
   background-color: rgb(20, 50, 80);
-  margin-bottom: 0;
 }
 .nav-center{
   text-align:center;
