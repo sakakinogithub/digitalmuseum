@@ -14,7 +14,6 @@ import './mock'
 import './lib/mui/css/mui.min.css'
 import VuePreview from 'vue-preview'
 
-Vue.use(VuePreview)
 Vue.use(MintUI)
 Vue.config.productionTip = false
 

@@ -54,7 +54,7 @@ export default new Router({
     },
     {
       path: '/user',
-      component: () => import('./views/userInfo.vue')
+      component: () => import('./views/userinfo.vue')
     },
     {
       path: '/relicinfo',

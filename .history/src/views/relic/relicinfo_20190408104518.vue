@@ -17,7 +17,7 @@ export default {
     comment,
     pcfooter
   },
-  data () {
+ data () {
     return {
       slide1: [
         {

@@ -12,12 +12,12 @@ import navbar from '../../components/common/navbar'
 import comment from '../../components/subcomponents/comment'
 import pcfooter from '../../components/common/pcfooter'
 export default {
-  components: {
-    navbar,
-    comment,
-    pcfooter
-  },
-  data () {
+components: {
+  navbar,
+  comment,
+  pcfooter
+},
+data () {
     return {
       slide1: [
         {
