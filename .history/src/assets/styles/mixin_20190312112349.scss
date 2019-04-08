@@ -1,0 +1,21 @@
+$ratio: 375 / 10;
+@function px2rem($px) {
+  @return $px /$ratio + rem
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  color: #666;
+  font-size: px2rem(16);
+}
+
+.title {
+  color: #666;
+  font-size: px2rem(16);
+  font-weight: bold;
+}
