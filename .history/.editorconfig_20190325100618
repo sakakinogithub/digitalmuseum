@@ -1,0 +1,6 @@
+[*.{js,jsx,ts,tsx,vue}]
+:ndent_style = spaceindent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = true
+VUE_APP_RES_URL = http://192.168.31.92:8080/
+VUE_APP_BASE_URL =
