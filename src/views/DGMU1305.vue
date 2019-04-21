@@ -3,7 +3,7 @@
     <navbar></navbar>
     <div><img src="http://www.csm.hn.cn/static/img/theme.3f19c15.png" alt=""></div>
     <div class="wrap">
-      <fieldset class="intro-1">
+      <div class="intro-1 box">
         <legend>作者简介</legend>
         <div class="intro">
           <div class="img">
@@ -70,8 +70,8 @@
             </table>
           </div>
         </div>
-      </fieldset>
-      <fieldset class="evaluation">
+      </div>
+      <div class="evaluation box">
         <legend>作者评价</legend>
         <div>
           <p>李白的乐府、歌行及绝句成就为最高。其歌行，完全打破诗歌创作的一切固有格式，空无依傍，笔法多端，达到了任随性之而变幻莫测、摇曳多姿的神奇境界。李白的绝句自然明快，飘逸潇洒，能以简洁明快的语言表达出无尽的情思。在盛唐诗人中，王维、孟浩然长于五绝，王昌龄等七绝写得很好，兼长五绝与七绝而且同臻极境的，只有李白一人。</p>
@@ -79,9 +79,10 @@
           <p>李白诗中常将想象、夸张、比喻、拟人等手法综合运用，从而造成神奇异彩、瑰丽动人的意境，这就是李白的浪漫主义诗作给人以豪迈奔放、飘逸若仙的原因所在。</p>
           <p>李白的诗歌对后代产生了极为深远的影响。中唐的韩愈、孟郊、李贺，宋代的苏轼、陆游、辛弃疾，明清的高启、杨慎、龚自珍等著名诗人，都受到李白诗歌的巨大影响。</p>
         </div>
-      </fieldset>
-      <fieldset>
-      <div class="works">
+      </div>
+      <div>
+      <div class="works box">
+        <legend>相关推荐</legend>
          <div class="row">
           <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <img src="https://www.dpm.org.cn/Uploads/Picture/2017/01/05/s586e0bbc96a24.jpg">
@@ -102,12 +103,11 @@
             <img src="https://www.dpm.org.cn/Uploads/Picture/2018/08/15/s5b73fdc321843.jpg">
           </div></div>
       </div>
-      </fieldset>
+      </div>
     </div>
     <footer>
       <pcfooter></pcfooter>
-    </footer>
-  </div>
+    </footer></div>
 </template>
 <script>
 import navbar from "../components/common/navbar";
@@ -135,9 +135,9 @@ div {
   margin: 0 auto;
   padding-top: 20px;
 }
-fieldset {
+.box {
   margin: 20px auto;
-  border: 1px dashed #999;
+  border-bottom: 1px dashed #999;
   width: 1000px;
   overflow: hidden;
   border-collapse: collapse;
@@ -166,5 +166,8 @@ img {
   max-width: 100%;
   max-height: 100%;
   margin-bottom: 0.5rem;
+}
+p{
+  text-indent: 2em;
 }
 </style>

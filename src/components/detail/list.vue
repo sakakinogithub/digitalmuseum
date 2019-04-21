@@ -2,7 +2,7 @@
   <div>
     <ul class="mui-table-view">
       <li class="mui-table-view-cell mui-media">
-        <router-link to="/relic/relic-detils">
+        <router-link to="/relicinfo">
           <img class="mui-media-object mui-pull-left" src="https://www.dpm.org.cn/Uploads/Picture/dc/24902.jpg">
           <div class="mui-media-body">
             <h1>磁山文化红陶盂</h1>

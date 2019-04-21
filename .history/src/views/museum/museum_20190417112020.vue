@@ -1,0 +1,419 @@
+<template>
+<div>
+  <div id="header">
+  <div class="container">
+    <!-- Header | Logo, Menu
+		================================================== -->
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" /></a></div>
+    <div class="mainmenu">
+      <div id="mainmenu">
+        <ul class="sf-menu">
+          <li><a href="index.html" id="visited">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a>
+            <ul>
+              <li><a href="portfolioproject.html">Portfolio Project</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html">Blog</a>
+            <ul>
+              <li><a href="singleblog.html">Single Post</a></li>
+            </ul>
+          </li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!-- mainmenu ends here -->
+
+      <!-- Responsive Menu -->
+      <form id="responsive-menu" action="#" method="post">
+        <select>
+          <option value="">Navigation</option>
+          <option value="index.html">Home</option>
+          <option value="about.html">About</option>
+          <option value="portfolio.html">Portfolio</option>
+          <option value="portfolioproject.html">Portfolio Project</option>
+          <option value="blog.html">Blog</option>
+          <option value="singleblog.html">Single Post</option>
+          <option value="features.html">Features</option>
+          <option value="contact.html">Contact</option>
+        </select>
+      </form>
+    </div>
+    <!-- mainmenu ends here -->
+  </div>
+  <!-- container ends here -->
+</div>
+<!-- header ends here -->
+<!-- Slider ==================================================
+================================================== -->
+<section class="slider">
+  <div class="flexslider">
+    <ul class="slides">
+      <li> <a href="#"><img src="images/flexslider/1.jpg" alt=""/></a>
+        <section class="caption">
+          <h2 class="shadow3">I am Freebix!</h2>
+          <p>Free, fully responsive HTML site template made by <a href="" rel="nofollow"><strong>Anariel Design</strong></a></p>
+          <a class="button" href="#">Download me!</a></section>
+      </li>
+      <li> <img src="images/flexslider/2.jpg" alt="" />
+        <section class="caption">
+          <h2 class="shadow3">I am Freebix!</h2>
+          <p>Free, fully responsive HTML site template made by <a href="" rel="nofollow"><strong>Anariel Design</strong></a></p>
+          <a class="button" href="#">Download me!</a></section>
+      </li>
+      <li> <a href="#"><img src="images/flexslider/3.jpg" alt="" /></a>
+        <section class="caption">
+          <h2 class="shadow3">I am Freebix!</h2>
+          <p>Free, fully responsive HTML site template made by <a href="" rel="nofollow"><strong>Anariel Design</strong></a></p>
+          <a class="button" href="#">Download me!</a></section>
+      </li>
+    </ul>
+  </div>
+  <!-- flexslider ends here -->
+</section>
+<!-- slider ends here -->
+<!-- info Box ==================================================
+================================================== -->
+<div class="infobox">
+  <div class="container info">
+    <header>
+      <h1>Introducing Freebix!</h1>
+      <p class="infop">- Free, fully <span class="pink">responsive HTML</span> site template made by <a href="" rel="nofollow"><strong>Anariel Design</strong></a> -</p>
+    </header>
+    <hr class="separator">
+  </div>
+  <!-- container ends here -->
+</div>
+<!-- infobox ends here -->
+<!--Latest Photos ==================================================
+================================================== -->
+<div class="container latest">
+  <div class="one_third">
+    <figure class="shadow"><a href="#" class="thumb"><img src="images/portfolio/a.jpg" alt="alt" /></a>
+      <figcaption> <a href="#">
+        <h3 class="heading">Retro Movie</h3>
+        </a>
+        <p class="bioquote">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. </p>
+      </figcaption>
+    </figure>
+  </div>
+  <!-- one_third ends here -->
+  <div class="one_third">
+    <figure class="shadow"><a href="#" class="thumb"><img src="images/portfolio/b.jpg" alt="alt" /></a>
+      <figcaption> <a href="#">
+        <h3 class="heading">Retro Movie</h3>
+        </a>
+        <p class="bioquote">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. </p>
+      </figcaption>
+    </figure>
+  </div>
+  <!-- one_third ends here -->
+  <div class="one_third lastcolumn">
+    <figure class="shadow"><a href="#" class="thumb"><img src="images/portfolio/c.jpg" alt="alt" /></a>
+      <figcaption> <a href="#">
+        <h3 class="heading">Retro Movie</h3>
+        </a>
+        <p class="bioquote">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. </p>
+      </figcaption>
+    </figure>
+  </div>
+  <!-- one_third ends here -->
+</div>
+<!-- end container -->
+<!--Heading Box ==================================================
+================================================== -->
+<div class="headingblock">
+  <div class="container heading">
+    <header>
+      <h2>Introducing Freebix!</h2>
+      <p>- Free, fully <span class="pink">responsive HTML</span> site template made by <a href="" rel="nofollow"><strong>Anariel Design</strong></a> -</p>
+    </header>
+  </div>
+  <!-- container ends here -->
+  <hr class="separator1">
+</div>
+<!-- headingblock ends here -->
+<!-- Latest News & Faq ==================================================
+================================================== -->
+<div class="container latest">
+  <div class="two_third">
+    <div class="accordion-trigger">
+      <h3>What did you eat for breakfast?</h3>
+    </div>
+    <div class="accordion-container">
+      <div class="one_third"> <img class="shadow" src="images/portfolio/a.jpg" alt="" /> </div>
+      <!--end one_third-->
+      <div class="one_third"> <img class="shadow" src="images/portfolio/b.jpg" alt="" /> </div>
+      <!--end one_third-->
+      <div class="one_third lastcolumn"> <img class="shadow" src="images/portfolio/c.jpg" alt="" /> </div>
+      <!--end one_third-->
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. </p>
+      <hr class="separator1">
+    </div>
+    <div class="accordion-trigger">
+      <h3>Morning or Night person?</h3>
+    </div>
+    <div class="accordion-container">
+      <div class="one_half">
+        <div class="video-holder">
+          <div class="video-container">
+            <iframe title="YouTube video player" class="youtube-player" src=""></iframe>
+          </div>
+          <!--video-container ends here-->
+        </div>
+        <!--video-holder ends here-->
+      </div>
+      <!--end one_half-->
+      <div class="one_half lastcolumn">
+        <div class="video-holder">
+          <div class="video-container">
+            <iframe title="YouTube video player" class="youtube-player" src=""></iframe>
+          </div>
+          <!--video-container ends here-->
+        </div>
+        <!--video-holder ends here-->
+      </div>
+      <!--end one_half-->
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p>
+      <hr class="separator1">
+    </div>
+    <div class="accordion-trigger">
+      <h3>If you were a animal, which would you be?</h3>
+    </div>
+    <div class="accordion-container">
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p>
+      <hr class="separator1">
+    </div>
+    <div class="accordion-trigger">
+      <h3>Your favorite places in the world?</h3>
+    </div>
+    <div class="accordion-container">
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p>
+      <hr class="separator1">
+    </div>
+    <div class="accordion-trigger">
+      <h3>Your favorite color?</h3>
+    </div>
+    <div class="accordion-container">
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p>
+      <hr class="separator1">
+    </div>
+    <div class="accordion-trigger">
+      <h3>The 5 things you can't live without?</h3>
+    </div>
+    <div class="accordion-container">
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+      <hr class="separator1">
+      <!-- ENDS Accordions -->
+    </div>
+  </div>
+  <!-- two_third ends here -->
+  <div class="one_third lastcolumn">
+    <h3>New Entries</h3>
+    <article>
+      <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
+      <p class="quote">One morning, when Gregor Samsa woke from troubled dreams.</p>
+      <a href="#" title="">&rarr; download</a></article>
+    <hr class="separator1">
+    <article>
+      <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
+      <p class="quote">One morning, when Gregor Samsa woke from troubled dreams.</p>
+      <a href="#" title="">&rarr; download</a></article>
+    <hr class="separator1">
+    <article>
+      <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
+      <p class="quote">One morning, when Gregor Samsa woke from troubled dreams.</p>
+      <a href="#" title="">&rarr; download</a></article>
+  </div>
+  <!-- one_third ends here -->
+</div>
+<!-- end container -->
+<!-- Socialize ==================================================
+================================================== -->
+<hr class="separator2">
+<div class="socialsblock">
+  <div class="container socialize">
+    <h3>Socialize with us!</h3>
+    <section class="socials">
+      <ul class="socials">
+        <li><a href="#"><img src="images/socials/twitter.png" alt="" /></a></li>
+        <li><a href="#"><img src="images/socials/facebook.png" alt="" /></a></li>
+        <li><a href="#"><img src="images/socials/dribbble.png" alt="" /></a></li>
+        <li><a href="#"><img src="images/socials/google+.png" alt="" /></a></li>
+        <li><a href="#"><img src="images/socials/linkedin.png" alt="" /></a></li>
+        <li><a href="#"><img src="images/socials/youtube.png" alt="" /></a></li>
+      </ul>
+    </section>
+  </div>
+  <!-- container ends here -->
+</div>
+<!-- socialsblock ends here -->
+<!-- Footer ==================================================
+================================================== -->
+<div class="footer">
+  <div class="container">
+    <div class="one_fourth">
+      <h3>Contact Informations</h3>
+      <p><span class="orange"><strong>Address:</strong></span> <br>
+        No.2 - 123678 street name City, Country</p>
+      <p><span class="orange"><strong>Phone:</strong></span> <br>
+        + 9 (094) 067 93567<br>
+      </p>
+      <p><span class="orange"><strong>Email:</strong></span> <br>
+        info@yoursite.com<br>
+      </p>
+    </div>
+    <!-- four columns ends here -->
+    <div class="one_fourth">
+      <h3>Blogroll</h3>
+      <ul>
+        <li><a href="#" title="">Development Blog</a></li>
+        <li><a href="#" class="">New Freebies</a></li>
+        <li><a href="#" class="">Themeforest Theme</a></li>
+        <li><a href="#" class=""> Design News</a></li>
+        <li><a href="#" class="">WordPress Theme</a></li>
+      </ul>
+    </div>
+    <!-- four columns ends here -->
+    <div class="one_fourth">
+      <h3>Archive</h3>
+      <ul>
+        <li><a href="#" class=""> August 2017</a></li>
+        <li><a href="#" class="">July 2017</a></li>
+        <li><a href="#" class="">Juny 2017</a></li>
+        <li><a href="#" class=""> May 2017</a></li>
+        <li><a href="#" class="">April 2017</a></li>
+      </ul>
+    </div>
+    <!-- four columns ends here -->
+    <div class="one_fourth lastcolumn">
+      <h3>About</h3>
+      <p>Freebix is responsive, simple and clean template with a lot attention to detail. Get it now!</p>
+      <p>Visit <a href="" rel="nofollow">Anariel Design</a> and find more interesting things.</p>
+    </div>
+    <!-- four columns ends here -->
+  </div>
+  <!-- container ends here -->
+</div>
+<!-- footer ends here -->
+<!-- Copyright ==================================================
+================================================== -->
+<div id="copyright">
+  <div class="container">
+    <p class="copyright">Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+  </div>
+  <!-- container ends here -->
+</div>
+</div>
+</template>
+
+<script>
+/* eslint-disable */
+			$(document).ready(function(){
+				jQuery("#responsive-menu select").change(function() {
+					window.location = jQuery(this).find("option:selected").val();
+				});
+				});
+            $(document).ready(function(){
+			$('.flexslider').flexslider({
+            animation: "fade",              //String: Select your animation type, "fade" or "slide"
+			slideDirection: "horizontal",   //String: Select the sliding direction, "horizontal" or "vertical"
+			slideshow: true,                //Boolean: Animate slider automatically
+			slideshowSpeed: 8000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+			animationDuration: 2000,         //Integer: Set the speed of animations, in milliseconds
+			directionNav: true,             //Boolean: Create navigation for previous/next navigation? (true/false)
+			controlNav: true,               //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
+			keyboardNav: true,              //Boolean: Allow slider navigating via keyboard left/right keys
+			mousewheel: false,              //Boolean: Allow slider navigating via mousewheel
+			prevText: "Previous",           //String: Set the text for the "previous" directionNav item
+			nextText: "Next",               //String: Set the text for the "next" directionNav item
+			pausePlay: false,               //Boolean: Create pause/play dynamic element
+			randomize: false,               //Boolean: Randomize slide order
+			slideToStart: 0,                //Integer: The slide that the slider should start on. Array notation (0 = first slide)
+			animationLoop: true,            //Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end
+			pauseOnAction: true,            //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
+			pauseOnHover: false,            //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
+			start: function(){},            //Callback: function(slider) - Fires when the slider loads the first slide
+			before: function(){},           //Callback: function(slider) - Fires asynchronously with each slider animation
+			after: function(){},            //Callback: function(slider) - Fires after each slider animation completes
+			end: function(){}               //Callback: function(slider) - Fires when the slider reaches the last slide (asynchronous)
+	  });
+		});
+// Activate the contactform
+			  $(document).ready(function(){
+			$(function(){
+				$('#contact_form').submit(function(e){
+					e.preventDefault();
+					var form = $(this);
+					var post_url = form.attr('action');
+					var post_data = form.serialize();
+					$('#loader', form).html('<img src="images/loader.gif" /> Please Wait...');
+					$.ajax({
+						type: 'POST',
+						url: post_url,
+						data: post_data,
+						success: function(msg) {
+							$(form).fadeOut(500, function(){
+								form.html(msg).fadeIn();
+							});
+						}
+					});
+				});
+			});
+			 });
+// Activate the prettyPhoto
+			   $(document).ready(function(){
+				  $("a[class^='prettyPhoto']").prettyPhoto();
+				});
+
+// Activate the MainMenu
+
+			  $(document).ready(function(){
+				  $("ul.sf-menu").superfish();
+			  });
+	//##########################################
+	// Accordion box
+	//##########################################
+	  $(document).ready(function(){
+	$('.accordion-container').hide();
+	$('.accordion-trigger:first').addClass('active').next().show();
+	$('.accordion-trigger').click(function(){
+		if( $(this).next().is(':hidden') ) {
+			$('.accordion-trigger').removeClass('active').next().slideUp();
+			$(this).toggleClass('active').next().slideDown();
+		}
+		return false;
+	});
+  });
+  (function ($) {
+  // hash change handler
+  function hashchange () {
+    var hash = window.location.hash
+      , el = $('ul.tabs [href*="' + hash + '"]')
+      , content = $(hash)
+
+    if (el.length && !el.hasClass('active') && content.length) {
+      el.closest('.tabs').find('.active').removeClass('active');
+      el.addClass('active');
+      content.show().addClass('active').siblings().hide().removeClass('active');
+    }
+  }
+
+  // listen on event and fire right away
+  $(window).on('hashchange.skeleton', hashchange);
+  hashchange();
+  $(hashchange);
+})(jQuery);
+export default {
+
+}
+</script>
+
+<style scoped>
+@import './css/base.css';
+@import './css/skeleton.css';
+@import './css/screen.css';
+@import './css/prettyPhoto.css';
+</style>

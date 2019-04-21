@@ -64,7 +64,7 @@
                     <br />
                     <br />朝代：元朝
                     <br />
-                    <br />藏馆：浙江省博物馆
+                    <br />藏馆：《剩山图》藏于浙江省博物馆，《无用师卷》藏于台北故宫博物馆
                     <br />
                     <br />
                     <button
@@ -161,7 +161,7 @@
               </div>
             </div>
           </div>
-          <!-- Modal -->
+          <!-- 分享模态框 -->
           <div
             class="modal fade"
             id="myModal"
@@ -284,15 +284,28 @@
                   />
                 </div>
               </div>
-              <div id="comment" class="comment col-xs-10 col-md-11">
-                <input
+              <div id="textarea" class="comment col-xs-10 col-md-11">
+                <textarea
                   id="inputComment"
                   type="textarea"
-                  rows="3"
+                  rows="1"
                   class="form-control"
-                  placeholder="你想说点什么吗？"
-                  @click="visible()"
-                />
+                  placeholder="你想说点什么吗？(最多输入300字)"
+                  @focus="textareaFocus"
+                  @keyup ="wordNumberDetect"
+                  @blur="textareaBlur"
+                  maxlength="300"
+                  :style="{height: height}"
+                >
+                </textarea>
+              </div>
+            </div>
+            <div class="row" v-show="visable">
+              <div class="col-xs-9 col-md-9">
+                <span class="wordNumber-space">您还可以输入{{ restWordNumber }}字</span>
+              </div>
+              <div class="col-xs-3 col-md-3">
+                <button class="btn btn-danger commentBtn-space" >发表评论</button>
               </div>
             </div>
             <div class="row">
@@ -310,14 +323,14 @@
                 </div>
               </div>
               <div class="comment col-xs-10 col-md-11">
-                <a href="#/user" target="_blank">user1:</a>
+                <a href="#/user" target="_blank">user1: </a>
                 <span>国之重器</span>
                 <div class="thumb-up">
                   <span
                     class="glyphicon glyphicon-thumbs-up"
                     aria-hidden="true"
                   ></span>
-                  2
+                  9
                 </div>
               </div>
             </div>
@@ -328,7 +341,7 @@
             </div>
             <div>
               <ul id="commentList">
-                <li v-for="item in commentList" :key="item.id" v-show="flag">
+                <li v-for="item in commentList" :key="item.id" v-show="commentVisable">
                   <div class="bottom row">
                     <div class="col-xs-2 col-md-1">
                       <div class="user-img">
@@ -339,7 +352,7 @@
                       </div>
                     </div>
                     <div class="comment col-xs-10 col-md-11">
-                      <a href="#/user" target="_blank">{{ item.userName }}:</a>
+                      <a href="#/user" target="_blank">{{ item.userName }}: </a>
                       <span>{{ item.comment }}</span>
                       <div class="thumb-up">
                         <span
@@ -357,12 +370,47 @@
                   </div>
                 </li>
               </ul>
+              <!-- 评论换页 -->
+              <div class="col-xs-4 col-sm-12 col-md-12 col-lg-12" v-show="commentVisable">
+                <nav style="text-align: right;">
+                  <ul class="pagination">
+                    <li>
+                      <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">1</a>
+                    </li>
+                    <li>
+                      <a href="#">2</a>
+                    </li>
+                    <li>
+                      <a href="#">3</a>
+                    </li>
+                    <li>
+                      <a href="#">4</a>
+                    </li>
+                    <li>
+                      <a href="#">5</a>
+                    </li>
+                    <li>
+                      <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
             <div>
               <div
                 style="text-align: center; font-size: 0.25rem; margin-top: 15px;"
               >
-                <a href="" @click.prevent="convert">点击查看99条热评</a>
+                <a href="" @click.prevent="convert" v-show="!commentVisable"
+                  >点击查看99条热评</a
+                >
+                <a href="" @click.prevent="convert" v-show="commentVisable">收起热评</a>
               </div>
             </div>
           </div>
@@ -427,6 +475,13 @@ import pcfooter from "../../components/common/pcfooter";
 export default {
   data() {
     return {
+      //热门评论是否显示
+      commentVisable: false,
+      //发表评论按钮及字数提醒是否显示
+      visable: false,
+      height: '30px',
+      restWordNumber: '300',
+
       // videojs options
       playerOptions: {
         height: "360",
@@ -447,17 +502,59 @@ export default {
         ]
       },
 
-      flag: false,
-
+      
       commentList: [
-        { id: 2, userName: "user2", comment: "国之重器2", likeCount: 2 },
-        { id: 3, userName: "user3", comment: "国之重器3", likeCount: 3 },
-        { id: 4, userName: "user4", comment: "国之重器4", likeCount: 4 },
-        { id: 5, userName: "user5", comment: "国之重器5", likeCount: 5 },
-        { id: 6, userName: "user6", comment: "国之重器6", likeCount: 6 },
-        { id: 7, userName: "user7", comment: "国之重器7", likeCount: 7 },
-        { id: 8, userName: "user8", comment: "国之重器8", likeCount: 8 }
-      ]
+        {
+          id: 2,
+          imgUrl: "http://pic1.win4000.com/pic/4/22/fc5d1297297.jpg",
+          userName: "user2",
+          comment: "国之重器2",
+          likeCount: 8
+        },
+        {
+          id: 3,
+          imgUrl: "http://pic1.win4000.com/pic/4/22/fc5d1297297.jpg",
+          userName: "user3",
+          comment: "国之重器3",
+          likeCount: 7
+        },
+        {
+          id: 4,
+          imgUrl: "http://pic1.win4000.com/pic/4/22/fc5d1297297.jpg",
+          userName: "user4",
+          comment: "国之重器4",
+          likeCount: 6
+        },
+        {
+          id: 5,
+          imgUrl: "http://pic1.win4000.com/pic/4/22/fc5d1297297.jpg",
+          userName: "user5",
+          comment: "国之重器5",
+          likeCount: 5
+        },
+        {
+          id: 6,
+          imgUrl: "http://pic1.win4000.com/pic/4/22/fc5d1297297.jpg",
+          userName: "user6",
+          comment: "国之重器6",
+          likeCount: 4
+        },
+        {
+          id: 7,
+          imgUrl: "http://pic1.win4000.com/pic/4/22/fc5d1297297.jpg",
+          userName: "user7",
+          comment: "国之重器7",
+          likeCount: 3
+        },
+        {
+          id: 8,
+          imgUrl: "http://pic1.win4000.com/pic/4/22/fc5d1297297.jpg",
+          userName: "user8",
+          comment: "国之重器8",
+          likeCount: 2
+        }
+      ],
+
     };
   },
   components: {
@@ -505,8 +602,20 @@ export default {
         "pic3"
       ).src;
     },
+    textareaFocus(){
+      this.height = '105px'
+      this.visable = !this.visable;
+    },
+    textareaBlur(){
+      this.height = '35px'
+      this.visable = !this.visable;
+    },
+    wordNumberDetect(){
+      var vm = document.getElementById('inputComment').value.length;
+      this.restWordNumber = 300 - vm;
+    },
     convert() {
-      this.flag = !this.flag;
+      this.commentVisable = !this.commentVisable;
     },
     onPlayerPlay(player) {
       // console.log('player play!', player)
@@ -733,14 +842,23 @@ export default {
 .comment {
   line-height: 50px;
 }
-.comment input {
+.comment textarea {
   margin-top: 10px;
 }
 .comment a {
   text-decoration: none;
 }
+.wordNumber-space{
+  margin-top: 8px;
+  float: right;
+  font-size: 0.3rem;
+  color: #8f8f94;
+}
+.commentBtn-space{
+  margin-bottom: 10px;
+  float: right;
+}
 .dashed {
-  margin-top: 5px;
   margin-right: 5px;
   border-top: 1px silver dashed;
 }
@@ -911,10 +1029,6 @@ export default {
   .vjs-menu-button-popup.vjs-volume-menu-button-vertical
   .vjs-menu {
   left: 0;
-}
-
-.vjs-custom-skin > .video-js .vjs-control-bar .vjs-resolution-button .vjs-menu {
-  /*order: 4;*/
 }
 
 /*排序顺序*/
