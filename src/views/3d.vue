@@ -17,25 +17,25 @@
     class="model-box"
         :backgroundAlpha="bgAlpha"
         :backgroundColor="bgColor"
-        src="static/models/obj/02751/02751.obj"
-        mtl="static/models/obj/02751/02751.mtl"></model-obj>
+        src="static/models/obj/G3-IV-212.obj"
+        mtl="static/models/obj/G3-IV-212.mtl"></model-obj>
 </div>
 </template>
 
 <script>
-    import { ModelObj } from 'vue-3d-model'
+import { ModelObj } from 'vue-3d-model'
 
-    export default {
-        data () {
-            return {
-                bgColor: '#ff0',
-                bgAlpha: 0.5
-            }
-        },
-        components: {
-            ModelObj
+export default {
+    data () {
+        return {
+            bgColor: '#ff0',
+            bgAlpha: 0.5
         }
-    }
+  },
+  components: {
+    ModelObj
+  }
+}
 </script>
 
 <style lang="scss" scoped>

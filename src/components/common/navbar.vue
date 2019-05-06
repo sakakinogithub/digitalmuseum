@@ -52,7 +52,7 @@
             </ul>
             </li>
             <li class="dropdown-show">
-              <a href="#/reliclist" class="arrow-toggle">藏品</a>
+              <a href="#/relic/relic-detils" class="arrow-toggle">藏品</a>
               <ul class="dropdown-nav">
                 <li><a href="#">校史馆</a></li>
                 <li><a href="#">地球馆</a></li>
@@ -217,6 +217,7 @@ export default {
 .logo{
   width: 1rem;
   height: 1rem;
+  margin-top: 3px;
 }
 .logotext
 {

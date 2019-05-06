@@ -3,62 +3,53 @@
     <div class="wrap">
       <Scroll>
         <navbar class="navbar1"></navbar>
-        <vs-sidebar
-          :reduce="reduce"
-          :reduce-not-hover-expand="notExpand"
-          parent="body"
-          default-index="1"
-          color="success"
-          class="sidebarx"
-          spacer
-          v-model="active"
-        >
-          <vs-sidebar-item index="2" icon-pack="icon-library" href="#introduction">
-            <h6>博物馆简介</h6>
-          </vs-sidebar-item>
-          <vs-sidebar-item index="3" icon-pack="icon-newspaper" href="#news">
-            <h6>新闻列表</h6>
-          </vs-sidebar-item>
-          <vs-sidebar-item index="4" icon-pack="icon-stack" href="#relic">
-            <h6>文物推荐</h6>
-          </vs-sidebar-item>
-          <vs-sidebar-item index="5" icon-pack="icon-accessibility" href="#activity">
-            <h6>活动展示</h6>
-          </vs-sidebar-item>
-          <div class="footer-sidebar" slot="footer">
-            <vs-button color="primary" type="border">
-              <span class="icon-cog"></span>
-            </vs-button>
-          </div>
-        </vs-sidebar>
         <img src="http://bwg.nwu.edu.cn/uploadfile/2017/0926/20170926060540193.jpg"  class="img-responsive">
-        <vs-button @click="active=!active, notExpand = false" color="success" type="filled">
-          <span class="icon-paragraph-left"></span>
-        </vs-button>
-        <vs-divider id="introduction" position="left" color="rgb(106, 76, 156)">简介</vs-divider>
+        <div class="value-props">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3 col-xs-6"><a class="value-prop" id="home-value-prop-intellisense-link" href="#introduction"><div class="value-prop-icon icon-quill"></div><div>简介</div></a></div>
+              <div class="col-sm-3 col-xs-6"><a class="value-prop" id="home-value-prop-debugging-link" href="#news"><div class="value-prop-icon icon-newspaper"></div><div>活动</div></a></div>
+              <div class="col-sm-3 col-xs-6"><a class="value-prop" id="home-value-prop-git-link" href="#relic"><div class="value-prop-icon icon-library"></div><div>文物</div></a></div>
+              <div class="col-sm-3 col-xs-6"><a class="value-prop" id="home-value-prop-extensions-link" href="#activity"><div class="value-prop-icon icon-accessibility"></div><div>研究</div></a></div>
+            </div>
+          </div>
+        </div>
+        <vs-divider id="introduction"  color="rgb(106, 76, 156)">
+          <h1 class="slogen theme">
+            <span class="wing slogen-left"></span>
+            <span>&nbsp;简介&nbsp;</span>
+            <span class="wing slogen-right"></span>
+          </h1>
+        </vs-divider>
         <div class="swimlane">
           <div class="container">
             <div class="row">
-              <div class="col-sm-4">
+              <div class="col-sm-6">
                 <img
                   src="http://bwg.nwu.edu.cn/uploadfile/20170926/1506390419117571.jpg"
                   alt="Intellisense"
                   class="screenshot"
                 >
               </div>
-              <div class="col-sm-7 col-sm-push-1">
+              <div class="col-sm-6 ">
                 <h2>博物馆简介</h2>
                 <p>西北大学博物馆是以西北大学为依托的一座大型综合类高校博物馆，位于西北大学太白校区。西北大学博物馆总建筑面积15000㎡，于2012年正式建成。现有馆藏文物、标本5000余件，已全面向社会公众免费开放。博物馆自开馆以来充分发挥着西北大学百年薪火相传下的自然学科特色和文物藏品优势， 以多角度、多方式、多侧面地向广大师生及社会观众展示西北大学的教学、科研成果。坚持“有效保护、合理利用、加强管理”的原则，把收藏保管、科学研究和宣传教育功能进行有机结合。</p>
               </div>
             </div>
           </div>
         </div>
-        <vs-divider id="news" position="left-center" color="rgb(125, 108, 70)">新闻</vs-divider>
+        <vs-divider id="news"  color="rgb(125, 108, 70)">
+          <h1 class="slogen theme">
+            <span class="wing slogen-left"></span>
+            <span>&nbsp;活动&nbsp;</span>
+            <span class="wing slogen-right"></span>
+          </h1>
+        </vs-divider>
         <div class="newslist">
           <vs-collapse type="margin">
             <vs-collapse-item icon-pack="icon-circle-down">
-              <div class="sign" slot="header">西北大学博物馆获评“西安市社会科学普及示范基地”</div>
-              <div class="container">
+              <div class="sign" slot="header">西北大学博物馆获评“西安市社会科学普及示范基地</div>
+              <div class="container-fluid" style="margin-top: 70px;">
                 <div class="row">
                   <div class="col-sm-4">
                     <img
@@ -68,15 +59,16 @@
                     >
                   </div>
                   <div class="col-sm-7 col-sm-push-1">
-                    <h1>2019.04.21</h1>
-                    <p>4月20日下午，庆祝建国70周年暨“家西安•70年”——2019年西安市社会科学普及周活动启动仪式在关中民俗艺术博物院隆重举行。省社科联、市社科联（院），以及市社科类社会组织、社科普及示范基地负责人，交大阳光...</p>
+                    <h1>西北大学博物馆获评“西安市社会科学普及示范基地</h1>
+                    <p style="padding-bottom:10px;">4月20日下午，庆祝建国70周年暨“家西安•70年”——2019年西安市社会科学普及周活动启动仪式在关中民
+                      俗艺术博物院隆重举行。省社科联、市社科联（院），以及市社科类社会组织、社科普及示范基地负责人，交大阳光...</p>
                   </div>
                 </div>
               </div>
             </vs-collapse-item>
             <vs-collapse-item icon-pack="icon-circle-down">
               <div class="sign" slot="header">关于举办2019年西北大学第六届 “雏凤杯”讲解比赛的通知</div>
-              <div class="container">
+              <div class="container-fluid" style="margin-top: 70px;">
                 <div class="row">
                   <div class="col-sm-4">
                     <img
@@ -94,7 +86,7 @@
             </vs-collapse-item>
             <vs-collapse-item icon-pack="icon-circle-down">
               <div class="sign" slot="header">摄影家与画家会碰撞出怎样的火花——约翰·坎普兰教授参观西大博物馆</div>
-              <div class="container">
+              <div class="container-fluid" style="margin-top: 70px;">
                 <div class="row">
                   <div class="col-sm-4">
                     <img
@@ -112,7 +104,7 @@
             </vs-collapse-item>
             <vs-collapse-item icon-pack="icon-circle-down">
               <div class="sign" slot="header">西北大学博物馆在2019年陕西科普讲解大赛中荣获佳绩</div>
-              <div class="container">
+              <div class="container-fluid" style="margin-top: 70px;">
                 <div class="row">
                   <div class="col-sm-4">
                     <img
@@ -130,13 +122,19 @@
             </vs-collapse-item>
           </vs-collapse>
         </div>
-        <vs-divider id="relic" position="center" color="rgb(9, 97, 72)">文物</vs-divider>
+        <vs-divider id="relic"  color="rgb(9, 97, 72)">
+          <h1 class="slogen theme">
+            <span class="wing slogen-left"></span>
+            <span>&nbsp;文物&nbsp;</span>
+            <span class="wing slogen-right"></span>
+          </h1>
+        </vs-divider>
         <div class="relics">
           <vs-row vs-justify="center">
-            <vs-col type="flex" vs-justify="center" vs-align="center" vs-xs="6" vs-sm="4" vs-lg="2">
+            <vs-col type="flex" vs-justify="center" vs-align="center" vs-xs="6" vs-sm="4" vs-lg="4" class="cardleft">
               <vs-card actionable class="cardx">
                 <div slot="header">
-                  <h3>青花八仙香炉</h3>
+                  <h5 style="color:#855B32;">青花八仙香炉</h5>
                 </div>
                 <div slot="media">
                   <img
@@ -145,7 +143,7 @@
                   >
                 </div>
                 <div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  <p>白地青花，清朝 ，炉，人物，景德镇窑 </p>
                 </div>
                 <div slot="footer">
                   <vs-row vs-justify="flex-end">
@@ -162,19 +160,19 @@
                 </div>
               </vs-card>
             </vs-col>
-            <vs-col type="flex" vs-justify="center" vs-align="center" vs-xs="6" vs-sm="4" vs-lg="2">
+            <vs-col type="flex" vs-justify="center" vs-align="center" vs-xs="6" vs-sm="4" vs-lg="4" class="card">
               <vs-card actionable class="cardx">
                 <div slot="header">
-                  <h3>青花八仙香炉</h3>
+                  <h5 style="color:#855B32;">青花八仙盖罐</h5>
                 </div>
                 <div slot="media">
                   <img
                     class="cardimg"
-                    src="http://sjzmuseum.com/uploads/181112/1-1Q1121111545E.jpg"
+                    src="http://sjzmuseum.com/uploads/181112/1-1Q11211110X94.jpg"
                   >
                 </div>
                 <div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  <p>其他青花，年代不详 ，其他器型，其他纹饰，其他窑系 </p>
                 </div>
                 <div slot="footer">
                   <vs-row vs-justify="flex-end">
@@ -191,19 +189,19 @@
                 </div>
               </vs-card>
             </vs-col>
-            <vs-col type="flex" vs-justify="center" vs-align="center" vs-xs="6" vs-sm="4" vs-lg="2">
+            <vs-col type="flex" vs-justify="center" vs-align="center" vs-xs="6" vs-sm="4" vs-lg="4" class="cardright">
               <vs-card actionable class="cardx">
                 <div slot="header">
-                  <h3>青花八仙香炉</h3>
+                  <h5 style="color:#855B32;">越窑鱼藻纹瓷盒</h5>
                 </div>
                 <div slot="media">
                   <img
                     class="cardimg"
-                    src="http://sjzmuseum.com/uploads/181112/1-1Q1121111545E.jpg"
+                    src="http://sjzmuseum.com/uploads/181112/1-1Q11211094H02.png"
                   >
                 </div>
                 <div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  <p>越窑鱼藻纹瓷盒,通高6厘米,口径11厘米。</p>
                 </div>
                 <div slot="footer">
                   <vs-row vs-justify="flex-end">
@@ -220,19 +218,19 @@
                 </div>
               </vs-card>
             </vs-col>
-            <vs-col type="flex" vs-justify="center" vs-align="center" vs-xs="6" vs-sm="4" vs-lg="2">
+            <vs-col type="flex" vs-justify="center" vs-align="center" vs-xs="6" vs-sm="4" vs-lg="4" class="cardleft">
               <vs-card actionable class="cardx">
                 <div slot="header">
-                  <h3>青花八仙香炉</h3>
+                  <h5 style="color:#855B32;">陈道复诗画册</h5>
                 </div>
                 <div slot="media">
                   <img
                     class="cardimg"
-                    src="http://sjzmuseum.com/uploads/181112/1-1Q1121111545E.jpg"
+                    src="http://sjzmuseum.com/uploads/181029/1-1Q029115624356.jpg"
                   >
                 </div>
                 <div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  <p>宋代的花鸟画，大致勾勒精到，设色逼真。</p>
                 </div>
                 <div slot="footer">
                   <vs-row vs-justify="flex-end">
@@ -249,19 +247,19 @@
                 </div>
               </vs-card>
             </vs-col>
-            <vs-col type="flex" vs-justify="center" vs-align="center" vs-xs="6" vs-sm="4" vs-lg="2">
+            <vs-col type="flex" vs-justify="center" vs-align="center" vs-xs="6" vs-sm="4" vs-lg="4" class="card">
               <vs-card actionable class="cardx">
                 <div slot="header">
-                  <h3>青花八仙香炉</h3>
+                  <h5 style="color:#855B32;">铜鎏金十一面观音像</h5>
                 </div>
                 <div slot="media">
                   <img
                     class="cardimg"
-                    src="http://sjzmuseum.com/uploads/181112/1-1Q1121111545E.jpg"
+                    src="http://sjzmuseum.com/uploads/181026/1-1Q02614333c24.jpg"
                   >
                 </div>
                 <div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  <p>清铜鎏金十一面观音立像是清代的一尊观音立像。</p>
                 </div>
                 <div slot="footer">
                   <vs-row vs-justify="flex-end">
@@ -278,19 +276,19 @@
                 </div>
               </vs-card>
             </vs-col>
-            <vs-col type="flex" vs-justify="center" vs-align="center" vs-xs="6" vs-sm="4" vs-lg="2">
+            <vs-col type="flex" vs-justify="center" vs-align="center" vs-xs="6" vs-sm="4" vs-lg="4" class="cardright">
               <vs-card actionable class="cardx">
                 <div slot="header">
-                  <h3>青花八仙香炉</h3>
+                  <h5 style="color:#855B32;">铜胎掐丝珐琅“五供”</h5>
                 </div>
                 <div slot="media">
                   <img
                     class="cardimg"
-                    src="http://sjzmuseum.com/uploads/181112/1-1Q1121111545E.jpg"
+                    src="http://sjzmuseum.com/uploads/181026/1-1Q02614323R38.jpg"
                   >
                 </div>
                 <div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  <p>觚高37.5cm；烛台高44.5cm；炉高46cm</p>
                 </div>
                 <div slot="footer">
                   <vs-row vs-justify="flex-end">
@@ -310,15 +308,21 @@
           </vs-row>
           <vs-pagination class="paginate" :total="40" v-model="currentx" prev-icon next-icon></vs-pagination>
         </div>
-         <vs-divider id="activity" position="right-center" color="rgb(0, 137, 167)">活动</vs-divider>
+         <vs-divider id="activity"  color="rgb(0, 137, 167)">
+           <h1 class="slogen theme">
+            <span class="wing slogen-left"></span>
+            <span>&nbsp;研究&nbsp;</span>
+            <span class="wing slogen-right"></span>
+          </h1>
+         </vs-divider>
         <div>
           <div id="meet-intellisense" class="swimlane">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <img src='http://bwg.nwu.edu.cn/uploadfile/20170922/1506059392752884.png' alt="Intellisense" class="screenshot"/>
                 </div>
-                <div class="col-sm-7 col-sm-push-1">
+                <div class="col-sm-6 ">
                     <h2>历史学院2015级新生参观我校博物馆</h2>
                     <p>9月2日，2015级新生入学之际，校博物馆也迎来了它的新观众。来自历史学院的120名...</p>
                 </div>
@@ -329,13 +333,14 @@
     <div id="powerful-debugging" class="swimlane">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 col-sm-push-8">
-                    <img src='http://bwg.nwu.edu.cn/uploadfile/2017/0922/20170922014835480.jpg' alt="Debugging" class="screenshot"/>
+                <div class="col-sm-6 col-sm-push-6">
+                  <img src='http://bwg.nwu.edu.cn/uploadfile/2017/0922/20170922014835480.jpg' alt="Debugging" class="screenshot"/>
                 </div>
-                <div class="col-sm-7 col-sm-pull-4">
-                    <h2>我馆博物学社成员赴浙江大学参加“全国高校讲解论坛交流会</h2>
-                    <p>5月24日至27日，我校博物馆派出博物学社负责人杨森、刘玥吟赴浙江大学参与第三届...</p>
+                <div class="col-sm-6 col-sm-pull-6">
+                  <h2>我馆博物学社成员赴浙江大学参加“全国高校讲解论坛交流会</h2>
+                  <p>5月24日至27日，我校博物馆派出博物学社负责人杨森、刘玥吟赴浙江大学参与第三届...</p>
                 </div>
+
             </div>
         </div>
     </div>
@@ -343,10 +348,10 @@
     <div id="built-in-git" class="swimlane">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <img src='http://bwg.nwu.edu.cn/uploadfile/20170922/1506059221755595.jpg' alt="Git" class="screenshot"/>
                 </div>
-                <div class="col-sm-7 col-sm-push-1">
+                <div class="col-sm-6 ">
                     <h2>Git commands built-in.</h2>
                     <p>Working with Git and other SCM providers has never been easier. Review diffs, stage files, and make commits right from the editor. Push and pull from any hosted SCM service.</p>
                 </div>
@@ -357,14 +362,15 @@
     <div id="hundreds-of-extensions" class="swimlane hundreds-extensions">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 col-sm-push-8">
-                    <img src="http://bwg.nwu.edu.cn/uploadfile/20170922/1506059065389308.jpg" class="screenshot" alt="Git" />
+                <div class="col-sm-6 col-sm-push-6">
+                  <img src="http://bwg.nwu.edu.cn/uploadfile/20170922/1506059065389308.jpg" class="screenshot" alt="Git" />
                 </div>
-                <div class="col-sm-7 col-sm-pull-4">
-                    <h2>Extensible and customizable.</h2>
+                <div class="col-sm-6 col-sm-pull-6">
+                  <h2>Extensible and customizable.</h2>
                     <p>Want even more features? Install extensions to add new languages, themes, debuggers, and to connect to additional services. Extensions run in separate processes, ensuring they won't slow down your editor.
                     </p>
                 </div>
+
             </div>
         </div>
     </div>
@@ -402,6 +408,13 @@ export default {
 </script>
 
 <style lang="stylus">
+a {
+  color:rgb(177,120,68);
+}
+a:hover {
+  color:rgb(150,99,46);
+  text-decoration: none;
+}
 .vs-icon {
   font-size: 25px;
 }
@@ -454,13 +467,14 @@ h3 {
 .sign
   margin-right 25px
 .screenshot {
-  margin-top: 28px;
-  width: 360px;
-  height: 216px;
+  width: 100%;
+  height: 174.4px;
   vertical-align: middle;
   border: 0;
 }
-
+.margin {
+  margin: 0 100px;
+}
 .header-sidebar {
   display: flex;
   align-items: center;
@@ -500,4 +514,47 @@ h3 {
   height 244px
   padding-top 65px
   text-align center
+.value-prop-icon:before
+  font-size 50px
+.value-prop
+  text-align center
+.value-props
+  margin-top 15px
+.theme {
+  text-align: center;
+  font-weight: bold; //加粗
+  padding-bottom: 10px;
+}
+.slogen .slogen-left {
+  background: url("../../assets/images/slogen.png");
+  margin-top: 3px;
+}
+.slogen .slogen-right {
+  background: url("../../assets/images/slogen.png");
+  transform: scaleX(-1);
+  margin-top: 3px;
+}
+.wing {
+  display: inline-block;
+  width: 42px;
+  height: 16px;
+}
+.page-header {
+  border-bottom: 0px;
+}
+.vs-divider--text {
+  background: none;
+}
+@media screen and (min-width: 768px) {
+  .cardleft {
+    padding-left: 110px;
+  }
+  .cardright {
+    padding-right: 110px;
+  }
+  .card{
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
 </style>

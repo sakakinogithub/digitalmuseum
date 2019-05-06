@@ -1,7 +1,7 @@
 <template>
   <div class="screen body">
     <div class="wrap">
-      <MuseumNavbar></MuseumNavbar>
+      <navbar class="navbar1"></navbar>
       <div class="body">
         <div>
           <div class="relic-name">
@@ -469,7 +469,7 @@
 import "video.js/dist/video-js.css";
 import { videoPlayer } from "vue-video-player";
 
-import MuseumNavbar from "../../components/common/MuseumNavbar";
+import navbar from "../../components/common/navbar";
 import pcfooter from "../../components/common/pcfooter";
 
 export default {
@@ -502,7 +502,7 @@ export default {
         ]
       },
 
-      
+
       commentList: [
         {
           id: 2,
@@ -559,7 +559,7 @@ export default {
   },
   components: {
     videoPlayer,
-    MuseumNavbar,
+    navbar,
     pcfooter
   },
   mounted() {

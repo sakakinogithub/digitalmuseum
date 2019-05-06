@@ -2,7 +2,7 @@
   <div class="screen">
     <div class="wrap">
       <Scroll>
-      <navbar class="navbar1"></navbar>
+      <navbarhome class="navbar1"></navbarhome>
       <carousel class="carousel"></carousel>
       <div class="museum_main">
         <div class="page-header">
@@ -301,13 +301,13 @@
 </template>
 
 <script>
-import navbar from '../components/common/navbar'
+import navbarhome from '../components/common/navbarhome'
 import Scroll from '../components/common/Scroll'
 import carousel from '../components/common/carousel'
 import pcfooter from '../components/common/pcfooter'
 export default {
   components: {
-    navbar,
+    navbarhome,
     carousel,
     pcfooter,
     Scroll
@@ -362,9 +362,9 @@ export default {
   }
   &:hover {
     .img-mask {
-      animation: fadeIn;
-      animation-duration: .5s;
-      animation-fill-mode: forwards;
+      animation: fadeIn;//渐入
+      animation-duration: .5s;//持续时间0.5秒
+      animation-fill-mode: forwards;//动画完成时保持最后状态
     }
   }
 }
@@ -373,10 +373,6 @@ export default {
     opacity: 0;
     transform: scale(0.7) rotate(0deg);
   }
-  // 50% {
-  //   opacity: 0.5;
-  //   transform: scale(0.8) rotate(5deg);
-  // }
   100% {
     opacity: 1;
     transform: scale(1) rotate(0deg);
@@ -500,13 +496,13 @@ export default {
    width: 90%;
 }
 .item {
-  position: relative;
+  position: relative;//相对布局
   width: 307px;
   height: 221px;
-  float: left;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  overflow: hidden;
+  float: left;//向左浮动
+  margin-bottom: 10px;//下方外边距
+  margin-left: 10px;//左边外边距
+  overflow: hidden;//超过图片设定部分的图片隐藏
 }
 .footerimg {
   background-color: black;
